@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <nav className="navbar">
       <div className="navbar-content">
@@ -10,11 +15,21 @@ const Navbar = () => {
           <img src={logo} alt="Çetin Sigorta Logo" className="logo" />
           <span className="site-title">Çetin Sigorta</span>
         </div>
-        <ul className="navbar-links">
-          <li><a href="#">Sigorta</a></li>
-          <li><a href="#">Hakkımızda</a></li>
-          <li><a href="#">İletişim</a></li>
-          <li><a href="#">Yardım Alın</a></li>
+
+        {/* Hamburger Button */}
+        <div className="hamburger" onClick={toggleMenu}>
+          <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+          <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+          <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+        </div>
+
+        {/* Mobil Menü */}
+        <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
+          <button className="close-btn" onClick={closeMenu}>×</button>
+          <li><a href="#" onClick={closeMenu}>Sigorta</a></li>
+          <li><a href="#" onClick={closeMenu}>Hakkımızda</a></li>
+          <li><a href="#" onClick={closeMenu}>İletişim</a></li>
+          <li><a href="#" onClick={closeMenu}>Yardım Alın</a></li>
         </ul>
       </div>
     </nav>

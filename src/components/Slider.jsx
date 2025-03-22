@@ -1,30 +1,50 @@
 import React from 'react';
 import './Slider.css';
+
+// Masaüstü görselleri
 import konut from '../assets/konut-sigortasi.png';
 import saglik from '../assets/saglik-sigortasi.png';
 import arac from '../assets/arac-sigortasi.png';
 
-const slides = [arac, saglik, konut];
+// Mobil görseller
+import konutMobile from '../assets/konut-mobile.png';
+import saglikMobile from '../assets/saglik-mobile.png';
+import aracMobile from '../assets/arac-mobile.png';
 
 export default function Slider() {
   const [index, setIndex] = React.useState(0);
+  const [isMobile, setIsMobile] = React.useState(window.innerWidth <= 768);
+
   const timeoutRef = React.useRef(null);
 
+  // Ekran boyutunu takip et
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Slider döngüsü
   const resetTimeout = () => {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
   };
 
   React.useEffect(() => {
     resetTimeout();
     timeoutRef.current = setTimeout(() => {
-      setIndex((prev) => (prev + 1) % slides.length);
+      setIndex((prev) => (prev + 1) % 3);
     }, 5000);
-    return () => {
-      resetTimeout();
-    };
+    return () => resetTimeout();
   }, [index]);
+
+  // Görsel kaynakları
+  const desktopSlides = [arac, saglik, konut];
+  const mobileSlides = [aracMobile, saglikMobile, konutMobile];
+
+  const slides = isMobile ? mobileSlides : desktopSlides;
 
   const prevSlide = () => {
     setIndex((prev) => (prev - 1 + slides.length) % slides.length);
