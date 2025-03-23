@@ -1,0 +1,40 @@
+.partner-section {
+    background-color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.04);
+    margin-top: 3rem;
+  }
+  
+  .partner-title {
+    color: #6dbd45; /* yeşilimsi vurgu */
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .partner-desc {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .partner-logos img {
+    max-height: 40px;
+    object-fit: contain;
+    opacity: 0.9;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .partner-logos img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  
