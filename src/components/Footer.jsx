@@ -39,6 +39,7 @@ const Footer = () => {
           <h3>Yardım Alın</h3>
           <ul>
             <li>Bize Ulaşın</li>
+            <li>Sıkça Sorulan Sorular</li>
           </ul>
         </div>
 
@@ -75,6 +76,7 @@ const Footer = () => {
             <summary>Yardım Alın</summary>
             <ul>
               <li>Bize Ulaşın</li>
+              <li>Sıkça Sorulan Sorular</li>
             </ul>
           </details>
         </div>
@@ -111,7 +113,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>Tüm hakları saklıdır. © 2025</p>
+        <p>© 2025 Çetin Sigorta. Tüm hakları saklıdır.</p>
         <p className="footer-designer">
            Bu site, Ebrar Kadir Çetin tarafından Çetin Sigorta için geliştirilmiştir.
         </p>

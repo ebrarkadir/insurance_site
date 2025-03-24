@@ -39,6 +39,11 @@
   gap: 24px;
   margin: 0;
   padding: 0;
+  position: relative;
+}
+
+.navbar-links li {
+  position: relative;
 }
 
 .navbar-links li a {
@@ -55,6 +60,62 @@
   background-color: rgba(0, 48, 135, 0.08);
 }
 
+/* DROPDOWN */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 20px 30px;
+  gap: 40px;
+  z-index: 10;
+  min-width: 700px;
+  justify-content: space-between;
+  border-radius: 6px;
+}
+
+.dropdown-menu.single-column {
+  min-width: 320px;
+  justify-content: flex-start;
+  gap: 0;
+}
+
+.dropdown-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  align-items: flex-start;
+}
+
+.dropdown-column h4 {
+  font-size: 0.9rem;
+  color: #003087;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #003087;
+  width: 100%;
+}
+
+.dropdown-column a {
+  font-size: 0.85rem !important;
+  color: #2b4a83 !important;
+  margin-bottom: 6px;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.dropdown-column a:hover {
+  text-decoration: underline;
+}
+
+/* HAMBURGER */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -69,11 +130,22 @@
   transition: all 0.3s ease;
   border-radius: 3px;
 }
+
 .close-btn {
-  display: none; /* masaüstü için gizle */
+  display: none;
 }
 
-/* === RESPONSIVE === */
+/* DESKTOP / MOBILE SPLIT */
+.desktop-menu {
+  display: flex;
+  gap: 24px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .navbar-links {
     flex-direction: column;
@@ -82,7 +154,7 @@
     right: -100%;
     background-color: white;
     height: 100vh;
-    width: 240px;
+    width: 260px;
     padding-top: 6rem;
     padding-left: 2rem;
     gap: 20px;
@@ -116,7 +188,7 @@
   }
 
   .close-btn {
-    display: block; /* sadece mobilde göster */
+    display: block;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -126,5 +198,40 @@
     color: #003087;
     cursor: pointer;
     z-index: 100;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .mobile-menu details summary {
+    font-weight: 600;
+    cursor: pointer;
+    color: #003087;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  .mobile-menu ul {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .mobile-menu li a {
+    color: #003087;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+
+  .mobile-menu li a:hover {
+    text-decoration: underline;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: none;
   }
 }
