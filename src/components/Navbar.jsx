@@ -75,7 +75,7 @@ const Navbar = () => {
                     <FaInfoCircle className="icon" /> Hakkımızda
                   </h4>
                   <a href="/sirket-bilgileri">Şirket Bilgileri</a>
-                  <a href="#">Ekibimiz</a>
+                  <a href="/ekibimiz">Ekibimiz</a>
                 </div>
               </div>
             </li>
@@ -150,7 +150,7 @@ const Navbar = () => {
                     <a href="/sirket-bilgileri">Şirket Bilgileri</a>
                   </li>
                   <li>
-                    <a href="#">Ekibimiz</a>
+                    <a href="/ekibimiz">Ekibimiz</a>
                   </li>
                 </ul>
               </details>

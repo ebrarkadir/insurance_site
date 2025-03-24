@@ -1,32 +1,85 @@
-.sirket-bilgileri-container {
-  background-color: #f4f6f8;
-  min-height: auto; /* ← Bu satır boşluk bırakıyor olabilir */
-  padding: 40px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.sirket-bilgileri-inner {
-  background-color: #ffffff;
-  max-width: 800px;
-  width: 100%;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-}
-
-.sirket-bilgileri-inner h1 {
-  font-size: 2rem;
-  color: #003087;
-  margin-bottom: 20px;
-}
-
-.sirket-bilgileri-inner p {
-  font-size: 1.05rem;
-  color: #333333;
-  line-height: 1.7;
-  margin-bottom: 16px;
-}
+.sirket-sayfasi-container {
+    display: flex;
+    background-color: #f4f6f8;
+    padding: 40px 20px 0 20px; /* alt padding kaldırıldı */
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: auto; /* Gerekliyse kaldırılabilir */
+    margin-bottom: 0;
+  }
+  
+  .sirket-sidebar {
+    width: 220px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+  }
+  
+  .sirket-sidebar h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #003087;
+  }
+  
+  .sirket-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sirket-sidebar li {
+    margin-bottom: 12px;
+  }
+  
+  .sirket-sidebar a {
+    text-decoration: none;
+    color: #003087;
+    font-size: 0.95rem;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .sirket-sidebar li.active a,
+  .sirket-sidebar a:hover {
+    background-color: #003087;
+    color: white;
+  }
+  
+  .sirket-bilgileri-content {
+    background-color: white;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 0; /* Footer’a fazla boşluk bırakmasın */
+  }
+  
+  .sirket-bilgileri-content h1 {
+    font-size: 2rem;
+    color: #003087;
+    margin-bottom: 20px;
+  }
+  
+  .sirket-bilgileri-content p {
+    font-size: 1.05rem;
+    color: #333333;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .sirket-sidebar {
+      display: none;
+    }
+  
+    .sirket-bilgileri-content {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+  
