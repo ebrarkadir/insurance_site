@@ -11,8 +11,8 @@ const Footer = () => {
         <div className="footer-col desktop-only">
           <h3>Çetin Sigorta</h3>
           <ul>
-            <li>Hakkımızda</li>
-            <li>Kariyer</li>
+            <li>Şirket bilgileri</li>
+            <li>Ekibimiz</li>
           </ul>
         </div>
 
@@ -48,8 +48,8 @@ const Footer = () => {
           <details>
             <summary>Çetin Sigorta</summary>
             <ul>
-              <li>Hakkımızda</li>
-              <li>Kariyer</li>
+              <li>Şirket Bilgileri</li>
+              <li>Ekibimiz</li>
             </ul>
           </details>
 
