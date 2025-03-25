@@ -81,14 +81,14 @@ const Navbar = () => {
             </li>
 
             <li className="dropdown">
-              <a href="#">İletişim</a>
+              <a href="/iletisim">İletişim</a>
               <div className="dropdown-menu single-column">
                 <div className="dropdown-column">
                   <h4>
                     <span className="icon">📍</span> İletişim
                   </h4>
-                  <a href="#">İletişim Bilgileri</a>
-                  <a href="#">Konum</a>
+                  <a href="/iletisim">İletişim Bilgileri</a>
+                  <a href="/konum">Konum</a>
                 </div>
               </div>
             </li>
@@ -160,10 +160,10 @@ const Navbar = () => {
                 <summary>İLETİŞİM</summary>
                 <ul>
                   <li>
-                    <a href="#">İletişim Bilgileri</a>
+                    <a href="/iletisim">İletişim Bilgileri</a>
                   </li>
                   <li>
-                    <a href="#">Konum</a>
+                    <a href="/konum">Konum</a>
                   </li>
                 </ul>
               </details>
