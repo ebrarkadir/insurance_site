@@ -6,6 +6,7 @@ import Slider from "./components/Slider";
 import SigortaButtons from "./components/SigortaButtons";
 import AnlasmaliSirketler from "./components/AnlasmaliSirketler";
 import Footer from "./components/Footer";
+import BizeUlasin from "./pages/BizeUlasin";
 
 // Sayfa bileşenleri
 import SirketBilgileri from "./pages/SirketBilgileri";
@@ -36,6 +37,7 @@ function App() {
           <Route path="/ekibimiz" element={<Ekibimiz />} />
           <Route path="/iletisim" element={<Iletisim />} />
           <Route path="/konum" element={<Konum />} />
+          <Route path="/bize-ulasin" element={<BizeUlasin />} />
         </Routes>
       </div>
       <Footer />

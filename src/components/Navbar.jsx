@@ -100,7 +100,7 @@ const Navbar = () => {
                   <h4>
                     <span className="icon">❓</span> Yardım Alın
                   </h4>
-                  <a href="#">Bize Ulaşın</a>
+                  <a href="/bize-ulasin">Bize Ulaşın</a>
                   <a href="#">Sıkça Sorulan Sorular</a>
                 </div>
               </div>
@@ -173,7 +173,7 @@ const Navbar = () => {
                 <summary>YARDIM ALIN</summary>
                 <ul>
                   <li>
-                    <a href="#">Bize Ulaşın</a>
+                    <a href="/bize-ulasin">Bize Ulaşın</a>
                   </li>
                   <li>
                     <a href="#">Sıkça Sorulan Sorular</a>
