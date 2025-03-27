@@ -7,25 +7,26 @@ const HasarAninda = () => {
   const currentPath = location.pathname;
 
   const firmalar = [
-    "Allianz Sigorta",
-    "HDI Sigorta",
-    "Türk Nippon Sigorta",
-    "Hepiyi Sigorta",
-    "Quick Sigorta",
-    "Magdeburger Sigorta",
-    "Ray Sigorta",
+    { name: "Allianz", tel: "0850 399 9999", logo: "allianz.png" },
+    { name: "HDI", tel: "444 8 434", logo: "hdi.png" },
+    { name: "Türk Nippon", tel: "0850 250 56 50", logo: "nippon.png" },
+    { name: "Hepiyi", tel: "0850 241 78 00", logo: "hepiyi.png" },
+    { name: "Quick", tel: "0850 755 1755", logo: "quick.png" },
+    { name: "Magdeburger", tel: "0850 502 7373", logo: "magdeburger.png" },
+    { name: "Ray", tel: "444 4 729", logo: "ray.png" },
   ];
 
   return (
     <div className="hasar-container">
-      {/* Sidebar */}
       <aside className="hasar-sidebar">
         <h3>Yardım</h3>
         <ul>
           <li className={currentPath === "/bize-ulasin" ? "active" : ""}>
             <Link to="/bize-ulasin">Bize Ulaşın</Link>
           </li>
-          <li className={currentPath === "/sikca-sorulan-sorular" ? "active" : ""}>
+          <li
+            className={currentPath === "/sikca-sorulan-sorular" ? "active" : ""}
+          >
             <Link to="/sikca-sorulan-sorular">Sıkça Sorulan Sorular</Link>
           </li>
           <li className={currentPath === "/hasar-aninda" ? "active" : ""}>
@@ -34,7 +35,6 @@ const HasarAninda = () => {
         </ul>
       </aside>
 
-      {/* Sağ İçerik */}
       <div className="hasar-content">
         <h1>Hasar Anında Yapmanız Gerekenler</h1>
 
@@ -42,22 +42,31 @@ const HasarAninda = () => {
           <div className="step-box">
             <h2>1. Güvenliğinizi Sağlayın</h2>
             <p>
-              Her şeyden önce güvenliğiniz önemli. Aracınızı emniyetli bir yere alın,
-              dörtlülerinizi yakın ve gerekliyse polisi ya da ambulansı arayın.
+              Her şeyden önce güvenliğiniz önemli. Aracınızı emniyetli bir yere
+              alın, dörtlülerinizi yakın ve gerekliyse polisi ya da ambulansı
+              arayın.
             </p>
           </div>
 
           <div className="step-box">
             <h2>2. Sigorta Firmanızı ya da Bizi Arayın</h2>
             <p>
-              Aşağıdaki sigorta firmalarından birine bağlıysanız doğrudan arayabilir
-              veya bize ulaşabilirsiniz:
+              Aşağıdaki sigorta firmalarından birine bağlıysanız doğrudan
+              arayabilir veya bize ulaşabilirsiniz:
             </p>
-            <ul className="firma-listesi">
+            <div className="sigorta-grid">
               {firmalar.map((firma, index) => (
-                <li key={index}>{firma}</li>
+                <div className="sigorta-item" key={index}>
+                  <img
+                    src={require(`../assets/partners/${firma.logo}`)?.default}
+                    alt={`${firma.name} Logo`}
+                    className="firma-logo"
+                  />
+
+                  <p className="firma-tel">{firma.tel}</p>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
 
           <div className="step-box">
@@ -76,7 +85,6 @@ const HasarAninda = () => {
           </div>
         </div>
 
-        {/* İletişim */}
         <div className="ek-bilgi-kutulari">
           <div className="detayli-bilgi-kutusu">
             <p>Detaylı bilgi için:</p>
