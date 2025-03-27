@@ -9,14 +9,19 @@ const BizeUlasin = () => {
 
   return (
     <div className="konum-container">
-      <aside className="konum-sidebar">
-        <h3>İletişim</h3>
+      <aside className="hasar-sidebar">
+        <h3>Yardım</h3>
         <ul>
           <li className={currentPath === "/bize-ulasin" ? "active" : ""}>
             <Link to="/bize-ulasin">Bize Ulaşın</Link>
           </li>
-          <li className={currentPath === "/sss" ? "active" : ""}>
-            <Link to="/sss">Sıkça Sorulan Sorular</Link>
+          <li
+            className={currentPath === "/sikca-sorulan-sorular" ? "active" : ""}
+          >
+            <Link to="/sikca-sorulan-sorular">Sıkça Sorulan Sorular</Link>
+          </li>
+          <li className={currentPath === "/hasar-aninda" ? "active" : ""}>
+            <Link to="/hasar-aninda">Hasar Anında</Link>
           </li>
         </ul>
       </aside>
@@ -68,6 +73,24 @@ const BizeUlasin = () => {
             </Link>
             .
           </p>
+        </div>
+
+        <div className="ek-bilgi-kutulari">
+          <div className="detayli-bilgi-kutusu">
+            <p>Detaylı bilgi için:</p>
+            <span className="tel-no">0272 214 76 96</span>
+          </div>
+
+          <div className="pdf-kutusu">
+            <p className="pdf-baslik">Kaza Tespit Tutanağı</p>
+            <a
+              href="/files/kaza-tespit-tutanağı.pdf"
+              download
+              className="pdf-indir-link"
+            >
+              PDF Dökümanı İndir
+            </a>
+          </div>
         </div>
       </div>
     </div>

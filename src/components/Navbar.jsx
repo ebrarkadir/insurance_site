@@ -101,7 +101,8 @@ const Navbar = () => {
                     <span className="icon">❓</span> Yardım Alın
                   </h4>
                   <a href="/bize-ulasin">Bize Ulaşın</a>
-                  <a href="#">Sıkça Sorulan Sorular</a>
+                  <a href="/sikca-sorulan-sorular">Sıkça Sorulan Sorular</a>
+                  <a href="/hasar-aninda">Hasar Anında</a>
                 </div>
               </div>
             </li>
@@ -176,7 +177,10 @@ const Navbar = () => {
                     <a href="/bize-ulasin">Bize Ulaşın</a>
                   </li>
                   <li>
-                    <a href="#">Sıkça Sorulan Sorular</a>
+                    <a href="/sikca-sorulan-sorular">Sıkça Sorulan Sorular</a>
+                  </li>
+                  <li>
+                    <a href="/hasar-aninda">Hasar Anında</a>
                   </li>
                 </ul>
               </details>
