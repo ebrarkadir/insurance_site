@@ -23,6 +23,11 @@
   display: flex;
   align-items: center;
 }
+.navbar-left a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
 
 .logo {
   height: 52px;
@@ -33,6 +38,18 @@
   font-size: 1.6rem;
   font-weight: 700;
   color: #003087;
+  margin-left: 8px;
+  text-decoration: none;
+  pointer-events: auto;
+}
+
+/* Tüm hover efektlerini iptal et */
+.site-title:hover,
+.site-title:focus,
+.site-title:active {
+  color: #003087;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .navbar-links {
@@ -216,7 +233,6 @@
     padding-bottom: 8px;
     margin-bottom: 12px;
   }
-  
 
   .mobile-menu details summary {
     position: relative;
@@ -226,9 +242,9 @@
     font-size: 1rem;
     padding: 10px 12px;
     text-transform: uppercase;
-    list-style: none ;
+    list-style: none;
   }
-  
+
   .mobile-menu details summary::after {
     content: "+";
     position: absolute;
@@ -237,11 +253,10 @@
     color: #003087;
     transition: transform 0.2s ease;
   }
-  
+
   .mobile-menu details[open] summary::after {
     content: "-";
   }
-  
 
   .mobile-menu ul {
     padding-left: 0.5rem;

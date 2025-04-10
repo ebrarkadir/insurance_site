@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import "./Navbar.css";
+import { Link, useLocation } from "react-router-dom";
 import {
   FaCarSide,
   FaHome,
@@ -18,8 +19,12 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-content">
         <div className="navbar-left">
-          <img src={logo} alt="Çetin Sigorta Logo" className="logo" />
-          <span className="site-title">Çetin Sigorta</span>
+          <Link to="/" className="navbar-logo-link">
+            <img src={logo} alt="Çetin Sigorta Logo" className="logo" />
+          </Link>
+          <Link to="/" className="site-title no-hover">
+            Çetin Sigorta
+          </Link>
         </div>
 
         <div className="hamburger" onClick={toggleMenu}>
