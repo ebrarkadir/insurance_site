@@ -199,11 +199,27 @@
   }
 
   .hasar-left-panel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .hasar-sidebar {
     display: none;
+  }
+
+  .detayli-bilgi-kutusu,
+  .pdf-kutusu {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
   }
 
   .hasar-content {
     padding: 24px;
   }
 }
+
+
 
