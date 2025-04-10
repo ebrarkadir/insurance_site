@@ -195,16 +195,15 @@
 @media (max-width: 768px) {
   .hasar-container {
     flex-direction: column;
+    padding: 20px 10px;
   }
 
   .hasar-left-panel {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: none;
   }
 
   .hasar-content {
     padding: 24px;
   }
 }
+
