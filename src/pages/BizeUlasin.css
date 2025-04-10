@@ -1,57 +1,52 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  background-color: #f4f6f8;
-  border: none;
-  box-shadow: none !important;
-  height: 100%;
-}
-
 .konum-container {
-  background-color: #f4f6f8;
-  min-height: 100vh;
-  padding: 40px 20px 0 20px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
-  box-shadow: none;
-  border: none;
+  gap: 24px;
+  background-color: #f4f6f8;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.konum-sidebar {
-  width: 220px;
+.konum-left-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 250px;
+  flex-shrink: 0;
+}
+
+/* Yardım Menüsü */
+.hasar-sidebar {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-  height: fit-content;
 }
 
-.konum-sidebar h3 {
+.hasar-sidebar h3 {
   font-size: 1.1rem;
   color: #003087;
   margin-bottom: 10px;
 }
 
-.konum-sidebar ul {
+.hasar-sidebar ul {
   list-style: none;
   padding-left: 0;
 }
 
-.konum-sidebar li {
+.hasar-sidebar li {
   margin-bottom: 12px;
 }
 
-.konum-sidebar a {
+.hasar-sidebar a {
   color: #003087;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
-.konum-sidebar li.active a {
+.hasar-sidebar li.active a {
   font-weight: 700;
   color: #fff;
   background-color: #003087;
@@ -60,108 +55,83 @@ html {
   display: inline-block;
 }
 
-.konum-sidebar a:hover {
-  text-decoration: underline;
+/* Detaylı Bilgi Kutusu */
+.detayli-bilgi-kutusu {
+  background-color: #003087;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+.tel-no {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c4ff00;
+  margin-top: 8px;
+}
+
+/* PDF Kutusu */
+.pdf-kutusu {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.pdf-baslik {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.pdf-indir-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #c4ff00;
+  color: #003087;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pdf-indir-link:hover {
+  background-color: #b4f000;
+}
+
+/* Ana İçerik */
 .konum-inner {
   background-color: #fff;
-  max-width: 1000px;
-  width: 100%;
   padding: 40px;
   border-radius: 10px;
-  box-shadow: none;
-  margin: 0;
-  border: none;
+  width: 100%;
+  max-width: 760px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
 }
 
 .konum-inner h1 {
-  font-size: 2rem;
+  text-align: center;
   color: #003087;
-  margin-bottom: 16px;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.info-text {
   text-align: center;
-}
-
-.konum-inner p {
-  text-align: center;
-  font-size: 1.05rem;
-  margin-bottom: 24px;
-  color: #333;
-}
-
-.map-wrapper {
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.map-wrapper iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  border-radius: 8px;
-}
-
-.yol-tarifi {
-  text-align: center;
+  color: #444;
   margin-bottom: 30px;
 }
 
-.yol-tarifi a {
-  background-color: #003087;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.yol-tarifi a:hover {
-  background-color: #001f5e;
-}
-
-.konum-extra-box {
-  background: #f9fafc;
-  border-radius: 8px;
-  padding: 48px;
-  margin: 60px auto 60px auto;
-  max-width: 1000px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  text-align: center;
-}
-
-.konum-extra-box h2 {
-  color: #003087;
-  font-size: 1.6rem;
-  margin-bottom: 20px;
-}
-
-.konum-extra-box ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.konum-extra-box li {
-  margin-bottom: 10px;
-  font-size: 1.15rem;
-  color: #333;
-}
-
-.contact-form {
-  margin-bottom: 40px;
-  padding: 32px;
-  background-color: #f9fafc;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-}
-
+/* Form */
 .contact-form h2 {
-  text-align: center;
+  font-size: 1.3rem;
   color: #003087;
   margin-bottom: 20px;
 }
@@ -174,76 +144,95 @@ html {
 
 .contact-form input,
 .contact-form textarea {
-  padding: 12px;
+  padding: 12px 14px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
-  background-color: #ffffff;
-  color: black;
+  width: 100%;
+  background-color: #ffffff; /* Arka plan beyaz */
+  color: #000000;            /* Yazı rengi siyah */
 }
 
 .contact-form button {
   background-color: #003087;
-  color: white;
-  padding: 12px;
+  color: #fff;
+  padding: 12px 20px;
   font-size: 1rem;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .contact-form button:hover {
-  background-color: #001f5e;
+  background-color: #001c5a;
 }
-.whatsapp-container {
+
+/* WhatsApp ve iletişim detayları */
+.contact-section {
+  margin-top: 40px;
   text-align: center;
-  margin: 20px 0;
 }
 
 .whatsapp-button {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   background-color: #25d366;
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.2rem;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
   text-decoration: none;
-  padding: 12px 24px;
-  border-radius: 50px; /* Yuvarlak çerçeve */
-  transition: background-color 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.whatsapp-button:hover {
-  color: #000803;
+  font-weight: bold;
+  gap: 8px;
+  margin-bottom: 12px;
 }
 
 .whatsapp-icon {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
+.contact-details p {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.ekip-link-box {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.ekip-link {
+  color: #003087;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Mobil Responsive */
 @media (max-width: 768px) {
   .konum-container {
     flex-direction: column;
+    padding: 20px 10px;
   }
 
-  .konum-sidebar {
+  .konum-left-panel {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hasar-sidebar {
     display: none;
+  }
+
+  .detayli-bilgi-kutusu,
+  .pdf-kutusu {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 
   .konum-inner {
     padding: 24px;
-  }
-
-  .map-wrapper {
-    height: 300px;
-  }
-
-  .konum-extra-box {
-    padding: 32px;
-    margin-top: 32px;
-    margin-bottom: 32px;
   }
 }
