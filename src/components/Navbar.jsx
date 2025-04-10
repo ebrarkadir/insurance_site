@@ -103,6 +103,7 @@ const Navbar = () => {
                   <a href="/bize-ulasin">Bize Ulaşın</a>
                   <a href="/sikca-sorulan-sorular">Sıkça Sorulan Sorular</a>
                   <a href="/hasar-aninda">Hasar Anında</a>
+                  <a href="/sigorta-teminatlari">Sigorta Teminatları</a>
                 </div>
               </div>
             </li>

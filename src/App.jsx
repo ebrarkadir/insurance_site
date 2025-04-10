@@ -14,6 +14,7 @@ import Ekibimiz from "./pages/Ekibimiz";
 import Iletisim from "./pages/Iletisim";
 import Konum from "./pages/Konum";
 import HasarAninda from "./pages/HasarAninda";
+import SigortaTeminat from "./pages/SigortaTeminat";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
             element={<SikcaSorulanSorular />}
           />
           <Route path="/hasar-aninda" element={<HasarAninda />} />
+          <Route path="/sigorta-teminatlari" element={<SigortaTeminat />} />
 
           {/* 404 Sayfası */}
         </Routes>

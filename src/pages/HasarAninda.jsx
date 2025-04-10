@@ -43,6 +43,11 @@ const HasarAninda = () => {
             <li className={currentPath === "/hasar-aninda" ? "active" : ""}>
               <Link to="/hasar-aninda">Hasar Anında</Link>
             </li>
+            <li
+              className={currentPath === "/sigorta-teminatlari" ? "active" : ""}
+            >
+              <Link to="/sigorta-teminatlari">Sigorta Teminatları</Link>
+            </li>
           </ul>
         </aside>
 

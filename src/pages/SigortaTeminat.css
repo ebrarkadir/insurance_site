@@ -1,0 +1,181 @@
+/* Genel sayfa düzeni */
+.teminat-container {
+    background-color: #f4f6f8;
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .teminat-left-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 260px;
+    flex-shrink: 0;
+  }
+  
+  .teminat-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .teminat-content h1 {
+    font-size: 2rem;
+    color: #003087;
+    margin-bottom: 20px;
+  }
+  
+  .teminat-content h3 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #003087;
+  }
+  
+  .teminat-content p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  
+  .teminat-content ul.teminat-linkleri {
+    padding-left: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .teminat-content ul.teminat-linkleri li a {
+    color: #003087;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+  /* Sidebar stilleri */
+  .teminat-sidebar {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .teminat-sidebar h3 {
+    font-size: 1.1rem;
+    color: #003087;
+    margin-bottom: 10px;
+  }
+  
+  .teminat-sidebar ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .teminat-sidebar li {
+    margin-bottom: 12px;
+  }
+  
+  .teminat-sidebar a {
+    color: #003087;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .teminat-sidebar li.active a {
+    font-weight: 700;
+    color: #fff;
+    background-color: #003087;
+    padding: 6px 12px;
+    border-radius: 6px;
+    display: inline-block;
+  }
+  
+  /* Bilgi kutuları */
+  .detayli-bilgi-kutusu {
+    background-color: #003087;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    max-width: 100%;
+  }
+  
+  .detayli-bilgi-kutusu .tel-no {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #c4ff00;
+    margin-top: 8px;
+  }
+  
+  .pdf-kutusu {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    max-width: 100%;
+  }
+  
+  .pdf-baslik {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .pdf-indir-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c4ff00;
+    color: #003087;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .pdf-indir-link:hover {
+    background-color: #b4f000;
+  }
+  
+  /* Mobil görünüm */
+  @media (max-width: 768px) {
+    .teminat-container {
+      flex-direction: column;
+      padding: 20px 10px;
+    }
+  
+    .teminat-left-panel {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+  
+    .teminat-sidebar {
+      display: none;
+    }
+  
+    .detayli-bilgi-kutusu,
+    .pdf-kutusu {
+      flex: 1 1 45%;
+      min-width: 140px;
+      max-width: 220px;
+    }
+  
+    .teminat-content {
+      padding: 20px;
+    }
+  }
+  
