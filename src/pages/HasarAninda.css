@@ -1,193 +1,210 @@
 .hasar-container {
-    background-color: #f4f6f8;
-    min-height: 100vh;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.hasar-container {
+  max-width: 1140px; /* Sayfanın genişliğini sınırlıyoruz */
+  margin: 0 auto;     /* Ortalıyoruz */
+  gap: 20px;
+}
+
+.hasar-left-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.hasar-content {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 860px;  /* Sağ içerik genişliği de sabitlendi */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Sidebar */
+.hasar-sidebar {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.hasar-sidebar h3 {
+  font-size: 1.1rem;
+  color: #003087;
+  margin-bottom: 10px;
+}
+
+.hasar-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.hasar-sidebar li {
+  margin-bottom: 12px;
+}
+
+.hasar-sidebar a {
+  color: #003087;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.hasar-sidebar li.active a {
+  font-weight: 700;
+  color: #fff;
+  background-color: #003087;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* Detaylı bilgi */
+.detayli-bilgi-kutusu {
+  background-color: #003087;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.detayli-bilgi-kutusu .tel-no {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c4ff00;
+  margin-top: 8px;
+}
+
+/* PDF kutusu */
+.pdf-kutusu {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.pdf-baslik {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.pdf-indir-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #c4ff00;
+  color: #003087;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pdf-indir-link:hover {
+  background-color: #b4f000;
+}
+
+/* Content */
+.hasar-content {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.hasar-content h1 {
+  font-size: 1.8rem;
+  color: #003087;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hasar-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.step-box h2 {
+  font-size: 1.2rem;
+  color: #003087;
+  margin-bottom: 10px;
+}
+
+.step-box p {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.step-box ul {
+  padding-left: 18px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.sigorta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.sigorta-item {
+  background-color: #f9fafc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.firma-logo {
+  max-height: 40px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.firma-tel {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hasar-container {
+    flex-direction: column;
   }
-  
-  .hasar-sidebar {
-    width: 220px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-    height: fit-content;
-  }
-  
-  .hasar-sidebar h3 {
-    font-size: 1.1rem;
-    color: #003087;
-    margin-bottom: 10px;
-  }
-  
-  .hasar-sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .hasar-sidebar li {
-    margin-bottom: 12px;
-  }
-  
-  .hasar-sidebar a {
-    color: #003087;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s ease;
-  }
-  
-  .hasar-sidebar li.active a {
-    background-color: #003087;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 6px;
-    display: inline-block;
-    font-weight: 600;
-  }
-  
-  .hasar-sidebar a:hover {
-    text-decoration: underline;
-  }
-  
-  .hasar-content {
-    background-color: #fff;
-    flex-grow: 1;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: none;
-  }
-  
-  .hasar-content h1 {
-    font-size: 2rem;
-    color: #003087;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  
-  .adimlar-listesi {
-    margin-bottom: 40px;
-  }
-  
-  .adimlar-listesi ol {
-    padding-left: 20px;
-    line-height: 1.7;
-    color: #333;
-  }
-  
-  .adimlar-listesi li {
-    margin-bottom: 15px;
-    font-size: 1.05rem;
-  }
-  
-  .sigorta-firmalari {
-    margin-bottom: 40px;
-  }
-  
-  .sigorta-firmalari h2 {
-    font-size: 1.5rem;
-    color: #003087;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .sigorta-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 20px;
-  }
-  
-  .sigorta-karti {
-    background-color: #f9fafc;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
-  }
-  
-  .sigorta-karti img {
-    max-width: 100px;
-    height: auto;
-    margin-bottom: 10px;
-    object-fit: contain;
-  }
-  
-  .sigorta-karti p {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #003087;
-  }
-  
-  .hasar-ek-kutular {
-    display: flex;
-    justify-content: center;
+
+  .hasar-left-panel {
+    width: 100%;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
   }
-  
-  .detayli-bilgi-kutusu,
-  .pdf-kutusu {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px 30px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    min-width: 240px;
+
+  .hasar-content {
+    padding: 24px;
   }
-  
-  .detayli-bilgi-kutusu {
-    background-color: #003087;
-    color: #fff;
-  }
-  
-  .detayli-bilgi-kutusu .tel-no {
-    display: block;
-    margin-top: 10px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #c4ff00;
-  }
-  
-  .pdf-baslik {
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-bottom: 12px;
-    color: #444;
-  }
-  
-  .pdf-indir-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #c4ff00;
-    color: #003087;
-    border-radius: 6px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background-color 0.3s;
-  }
-  
-  .pdf-indir-link:hover {
-    background-color: #a8e600;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .hasar-container {
-      flex-direction: column;
-    }
-  
-    .hasar-sidebar {
-      display: none;
-    }
-  
-    .hasar-content {
-      padding: 24px;
-    }
-  
-    .hasar-ek-kutular {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  
+}
