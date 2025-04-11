@@ -47,7 +47,7 @@ const Navbar = () => {
                   <h4>
                     <FaCarSide className="icon" /> Araç
                   </h4>
-                  <a href="#">Zorunlu Trafik Sigortası</a>
+                  <a href="/trafik-sigortasi">Zorunlu Trafik Sigortası</a>
                   <a href="#">Kasko Sigortası</a>
                   <a href="#">İhtiyari Mali Mesuliyet Sigortası</a>
                 </div>
@@ -122,7 +122,7 @@ const Navbar = () => {
                 <ul>
                   <h5>Araç</h5>
                   <li>
-                    <a href="#">Zorunlu Trafik Sigortası</a>
+                    <a href="/trafik-sigortasi">Zorunlu Trafik Sigortası</a>
                   </li>
                   <li>
                     <a href="#">Kasko Sigortası</a>
