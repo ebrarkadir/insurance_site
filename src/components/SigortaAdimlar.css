@@ -1,0 +1,81 @@
+.sigorta-adimlar-container {
+  background-color: #ffffff; /* arka plan beyaz yapıldı */
+  padding: 40px 20px;
+  text-align: center;
+  width: 100%;
+  padding-top: 30px; /* üst boşluk arttırıldı */
+}
+
+.adimlar-baslik {
+  font-size: 1.8rem;
+  color: #6dbd45;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.adimlar-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 250px; /* araları biraz daha açıldı */
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.adim-kutu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adim-numara {
+  background-color: #003087;
+  color: white;
+  width: 70px;
+  height: 70px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 12px; /* daire değil, modern köşeli */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+
+  /* 3D kart görünümü */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15),
+    inset 0 -2px 0 rgba(255, 255, 255, 0.1), inset 0 2px 0 rgba(0, 0, 0, 0.05);
+
+  border: 3px solid #ffffff;
+  outline: 2px solid #c4d3ef;
+}
+
+.adim-text {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #222;
+}
+
+@media (max-width: 768px) {
+  .adimlar-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px; /* daha az boşluk */
+  }
+
+  .adim-kutu {
+    margin-bottom: 0px; /* ekstra boşluk kaldırıldı */
+  }
+
+  .adim-numara {
+    width: 60px;
+    height: 60px;
+    font-size: 1.3rem;
+  }
+
+  .adim-text {
+    font-size: 1rem;
+  }
+
+  .sigorta-adimlar-container {
+    padding: 30px 10px;
+  }
+}

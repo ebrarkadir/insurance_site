@@ -36,7 +36,7 @@ const BizeUlasin = () => {
 
         {/* Bilgi kutuları artık burada */}
         <div className="detayli-bilgi-kutusu">
-          <p>Detaylı bilgi için:</p>
+          <p>📞 Detaylı bilgi için:</p>
           <span className="tel-no">0272 214 76 96</span>
         </div>
 

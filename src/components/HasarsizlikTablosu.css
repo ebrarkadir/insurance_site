@@ -1,0 +1,93 @@
+.hasarsizlik-container {
+    width: 100vw; /* viewport genişliği kadar */
+    padding: 40px 20px;
+    background-color: #f4f6f8;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .hasarsizlik-baslik {
+    font-size: 1.8rem;
+    color: #6dbd45; /* sadece yazı rengi yeşil */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  .tarih {
+    color: #003087;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+  
+  .hasarsizlik-tablo {
+    width: 100%; /* Tam genişlik */
+    max-width: 1400px; /* Daha fazla genişleme sağlandı */
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    color: #000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  
+  
+
+.hasarsizlik-tablo th {
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  text-align: center;
+  background-color: #003087;
+  color: #fff;
+}
+
+.hasarsizlik-tablo td {
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  text-align: center;
+  color: #000; 
+}
+
+.hasarsizlik-tablo thead {
+  background-color: #003087;
+  color: white;
+}
+
+.hasarsizlik-tablo tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.hasarsizlik-tablo tbody tr:hover {
+  background-color: #f1f1f1;
+}
+/* Tabloyu saran div için responsive scroll alanı */
+.hasarsizlik-table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+  }
+  
+  /* Mobil görünüm için optimize etme */
+  @media (max-width: 768px) {
+    .hasarsizlik-tablo {
+      font-size: 0.75rem;      /* Yazıları küçültür */
+    }
+  
+    .hasarsizlik-tablo th,
+    .hasarsizlik-tablo td {
+      padding: 8px 6px;        /* Hücre içi boşlukları daraltır */
+    }
+  
+    .hasarsizlik-container {
+      padding: 30px 10px;
+    }
+  
+    .hasarsizlik-baslik {
+      font-size: 1.3rem;
+    }
+  
+    .tarih {
+      font-size: 0.9rem;
+    }
+  }
+  

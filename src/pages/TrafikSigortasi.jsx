@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./TrafikSigortasi.css";
+import Adimlar from "../components/SigortaAdimlar";
+import HasarsizlikTablosu from "../components/HasarsizlikTablosu";
+import AnlasmaliSirketler from "../components/AnlasmaliSirketler";
 
 const TrafikSigortasi = () => {
   const [tip, setTip] = useState("bireysel");
@@ -8,10 +11,11 @@ const TrafikSigortasi = () => {
   const [dogumTarihi, setDogumTarihi] = useState("");
   const [plakaYok, setPlakaYok] = useState(false);
   const [plaka, setPlaka] = useState("");
+  const [telefon, setTelefon] = useState("+90");
   const [showPopup, setShowPopup] = useState(false);
 
   const handleSubmit = () => {
-    setShowPopup(true);
+    setTimeout(() => setShowPopup(true), 300);
   };
 
   const closePopup = () => {
@@ -43,11 +47,16 @@ const TrafikSigortasi = () => {
         <form
           action="https://formsubmit.co/cetinebrarkadir@gmail.com"
           method="POST"
+          target="hidden_iframe"
           className="trafik-form"
           onSubmit={handleSubmit}
         >
           <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_subject" value="Yeni Trafik Sigortası Başvurusu" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="Yeni Trafik Sigortası Başvurusu"
+          />
           <input type="hidden" name="_template" value="box" />
 
           <input
@@ -78,6 +87,9 @@ const TrafikSigortasi = () => {
                 placeholder="T.C. Kimlik No"
                 value={tcKimlik}
                 onChange={(e) => setTcKimlik(e.target.value)}
+                pattern="\d{12}"
+                maxLength="12"
+                minLength="12"
                 required
               />
               <input
@@ -97,11 +109,23 @@ const TrafikSigortasi = () => {
               placeholder="Vergi No"
               value={vergiNo}
               onChange={(e) => setVergiNo(e.target.value)}
+              pattern="\d{11}"
+              maxLength="11"
+              minLength="11"
               required
             />
           )}
 
-          <input type="tel" name="telefon" placeholder="Cep Telefonu" required />
+          <input
+            type="tel"
+            name="telefon"
+            placeholder="Cep Telefonu"
+            value={telefon}
+            onChange={(e) => setTelefon(e.target.value)}
+            pattern="\+90\d{10}"
+            maxLength="13"
+            required
+          />
 
           <p className="form-info">
             Bu formdan ilettiğiniz bilgiler sadece trafik sigortası teklifi
@@ -118,6 +142,12 @@ const TrafikSigortasi = () => {
             durumunda, verdiğiniz cep telefonu numarası üzerinden sizinle
             iletişime geçilebilir.
           </p>
+
+          <iframe
+            name="hidden_iframe"
+            id="hidden_iframe"
+            style={{ display: "none" }}
+          ></iframe>
         </form>
       </div>
 
@@ -136,6 +166,10 @@ const TrafikSigortasi = () => {
           </div>
         </div>
       )}
+
+      <Adimlar />
+        <HasarsizlikTablosu />
+        <AnlasmaliSirketler />
     </div>
   );
 };
