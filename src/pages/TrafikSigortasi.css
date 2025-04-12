@@ -82,6 +82,15 @@
   flex-direction: column;
   gap: 6px;
 }
+.diger{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color : #003087;
+  font-size: 2rem;
+  padding-top: 30px;
+}
 
 .checkbox-altinda {
   display: flex;

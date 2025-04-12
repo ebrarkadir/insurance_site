@@ -3,6 +3,7 @@ import "./TrafikSigortasi.css";
 import Adimlar from "../components/SigortaAdimlar";
 import HasarsizlikTablosu from "../components/HasarsizlikTablosu";
 import AnlasmaliSirketler from "../components/AnlasmaliSirketler";
+import SigortaButtonsFiltered from "../components/SigortaButtonsFiltered";
 
 const TrafikSigortasi = () => {
   const [tip, setTip] = useState("bireysel");
@@ -119,11 +120,11 @@ const TrafikSigortasi = () => {
           <input
             type="tel"
             name="telefon"
-            placeholder="Cep Telefonu"
-            value={telefon}
-            onChange={(e) => setTelefon(e.target.value)}
+            placeholder="5XXXXXXXXX"
+            value={telefon.replace("+90", "")} // sadece numara kısmını tut
+            onChange={(e) => setTelefon("+90" + e.target.value.replace(/\D/g, ""))} // sadece rakamları al
             pattern="\+90\d{10}"
-            maxLength="13"
+            maxLength="10"
             required
           />
 
@@ -170,6 +171,7 @@ const TrafikSigortasi = () => {
       <Adimlar />
         <HasarsizlikTablosu />
         <AnlasmaliSirketler />
+        <SigortaButtonsFiltered />
     </div>
   );
 };

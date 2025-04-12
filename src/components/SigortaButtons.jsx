@@ -1,5 +1,5 @@
-// components/SigortaButtons.jsx
 import React from "react";
+import { Link } from "react-router-dom"; // Eklendi
 import "./SigortaButtons.css";
 
 // İkonları buraya import edebilirsin
@@ -14,33 +14,33 @@ const SigortaButtons = () => {
   return (
     <div className="sigorta-button-wrapper">
       <div className="sigorta-top-row">
-        <div className="sigorta-card large">
+        <Link to="/trafik-sigortasi" className="sigorta-card large">
           <img src={trafikIcon} alt="Trafik" className="sigorta-icon" />
           <span className="sigorta-title">Zorunlu Trafik</span>
-        </div>
-        <div className="sigorta-card large">
+        </Link>
+        <Link to="/kasko" className="sigorta-card large">
           <img src={kaskoIcon} alt="Kasko" className="sigorta-icon" />
           <span className="sigorta-title">Kasko</span>
-        </div>
+        </Link>
       </div>
 
       <div className="sigorta-bottom-row">
-        <div className="sigorta-card small">
+        <Link to="/imm" className="sigorta-card small">
           <img src={immIcon} alt="İMM" className="sigorta-icon" />
           <span className="sigorta-title">İMM</span>
-        </div>
-        <div className="sigorta-card small">
+        </Link>
+        <Link to="/dask" className="sigorta-card small">
           <img src={daskIcon} alt="DASK" className="sigorta-icon" />
           <span className="sigorta-title">DASK</span>
-        </div>
-        <div className="sigorta-card small">
+        </Link>
+        <Link to="/tamamlayici-saglik" className="sigorta-card small">
           <img src={tamamlayiciIcon} alt="Tamamlayıcı" className="sigorta-icon" />
           <span className="sigorta-title">Tamamlayıcı Sağlık</span>
-        </div>
-        <div className="sigorta-card small">
+        </Link>
+        <Link to="/seyahat-saglik" className="sigorta-card small">
           <img src={seyahatIcon} alt="Seyahat" className="sigorta-icon" />
           <span className="sigorta-title">Seyahat Sağlık</span>
-        </div>
+        </Link>
       </div>
     </div>
   );
