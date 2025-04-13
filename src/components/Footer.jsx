@@ -11,35 +11,63 @@ const Footer = () => {
         <div className="footer-col desktop-only">
           <h3>Çetin Sigorta</h3>
           <ul>
-            <li>Şirket bilgileri</li>
-            <li>Ekibimiz</li>
+            <li>
+              <a href="/sirket-bilgileri">Şirket Bilgileri</a>
+            </li>
+            <li>
+              <a href="/ekibimiz">Ekibimiz</a>
+            </li>
           </ul>
         </div>
 
         <div className="footer-col desktop-only">
           <h3>Sigorta</h3>
           <ul>
-            <li>Zorunlu Trafik Sigortası</li>
-            <li>Kasko Sigortası</li>
-            <li>DASK Sigortası</li>
-            <li>Tamamlayıcı Sağlık Sigortası</li>
-            <li>Seyahat Sağlık Sigortası</li>
+            <li>
+              <a href="/trafik-sigortasi">Zorunlu Trafik Sigortası</a>
+            </li>
+            <li>
+              <a href="/kasko">Kasko Sigortası</a>
+            </li>
+            <li>
+              <a href="/dask">DASK Sigortası</a>
+            </li>
+            <li>
+              <a href="/tamamlayici-saglik">Tamamlayıcı Sağlık Sigortası</a>
+            </li>
+            <li>
+              <a href="/seyahat-saglik">Seyahat Sağlık Sigortası</a>
+            </li>
           </ul>
         </div>
 
         <div className="footer-col desktop-only">
           <h3>İletişim</h3>
           <ul>
-            <li>İletişim Bilgileri</li>
-            <li>Konum</li>
+            <li>
+              <a href="/iletisim">İletişim Bilgileri</a>
+            </li>
+            <li>
+              <a href="/konum">Konum</a>
+            </li>
           </ul>
         </div>
 
         <div className="footer-col desktop-only">
           <h3>Yardım Alın</h3>
           <ul>
-            <li>Bize Ulaşın</li>
-            <li>Sıkça Sorulan Sorular</li>
+            <li>
+              <a href="/bize-ulasin">Bize Ulaşın</a>
+            </li>
+            <li>
+              <a href="/sikca-sorulan-sorular">Sıkça Sorulan Sorular</a>
+            </li>
+            <li>
+              <a href="/hasar-aninda">Hasar Anında</a>
+            </li>
+            <li>
+              <a href="/sigorta-teminatlari">Sigorta Teminatları</a>
+            </li>
           </ul>
         </div>
 
@@ -48,35 +76,63 @@ const Footer = () => {
           <details>
             <summary>Çetin Sigorta</summary>
             <ul>
-              <li>Şirket Bilgileri</li>
-              <li>Ekibimiz</li>
+              <li>
+                <a href="/sirket-bilgileri">Şirket Bilgileri</a>
+              </li>
+              <li>
+                <a href="/ekibimiz">Ekibimiz</a>
+              </li>
             </ul>
           </details>
 
           <details>
             <summary>Sigorta</summary>
             <ul>
-              <li>Zorunlu Trafik Sigortası</li>
-              <li>Kasko Sigortası</li>
-              <li>DASK Sigortası</li>
-              <li>Tamamlayıcı Sağlık Sigortası</li>
-              <li>Seyahat Sağlık Sigortası</li>
+              <li>
+                <a href="/trafik-sigortasi">Zorunlu Trafik Sigortası</a>
+              </li>
+              <li>
+                <a href="/kasko">Kasko Sigortası</a>
+              </li>
+              <li>
+                <a href="/dask">DASK Sigortası</a>
+              </li>
+              <li>
+                <a href="/tamamlayici-saglik">Tamamlayıcı Sağlık Sigortası</a>
+              </li>
+              <li>
+                <a href="/seyahat-saglik">Seyahat Sağlık Sigortası</a>
+              </li>
             </ul>
           </details>
 
           <details>
             <summary>İletişim</summary>
             <ul>
-              <li>İletişim Bilgileri</li>
-              <li>Konum</li>
+              <li>
+                <a href="/iletisim">İletişim Bilgileri</a>
+              </li>
+              <li>
+                <a href="/konum">Konum</a>
+              </li>
             </ul>
           </details>
 
           <details>
             <summary>Yardım Alın</summary>
             <ul>
-              <li>Bize Ulaşın</li>
-              <li>Sıkça Sorulan Sorular</li>
+              <li>
+                <a href="/bize-ulasin">Bize Ulaşın</a>
+              </li>
+              <li>
+                <a href="/sikca-sorulan-sorular">Sıkça Sorulan Sorular</a>
+              </li>
+              <li>
+                <a href="/hasar-aninda">Hasar Anında</a>
+              </li>
+              <li>
+                <a href="/sigorta-teminatlari">Sigorta Teminatları</a>
+              </li>
             </ul>
           </details>
         </div>
@@ -103,22 +159,26 @@ const Footer = () => {
           <h2>
             <FaPhoneAlt style={{ color: "grey" }} /> 0272 214 76 96
           </h2>
-          <p>Sorularınız için numaramızdan bize ulaşarak destek alabilirsiniz.</p>
+          <p>
+            Sorularınız için numaramızdan bize ulaşarak destek alabilirsiniz.
+          </p>
           <p>
             Çetin Sigorta Müşteri Hizmetleri hafta içi 09:30 - 19:30 arası
             hizmetinizdedir.
           </p>
-          <p>Çalışma saatleri dışında WhatsApp aracılığı ile ulaşabilirsiniz.</p>
+          <p>
+            Çalışma saatleri dışında WhatsApp aracılığı ile ulaşabilirsiniz.
+          </p>
         </div>
       </div>
 
       <div className="footer-bottom">
         <p>© 2025 Çetin Sigorta. Tüm hakları saklıdır.</p>
         <p className="footer-designer">
-           Bu site, Ebrar Kadir Çetin tarafından Çetin Sigorta için geliştirilmiştir.
+          Bu site, Ebrar Kadir Çetin tarafından Çetin Sigorta için
+          geliştirilmiştir.
         </p>
-</div>
-
+      </div>
     </footer>
   );
 };
