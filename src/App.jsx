@@ -17,6 +17,7 @@ import HasarAninda from "./pages/HasarAninda";
 import SigortaTeminat from "./pages/SigortaTeminat";
 import TrafikSigortasi from "./pages/TrafikSigortasi";
 import KaskoSigortasi from "./pages/KaskoSigortasi";
+import ImmSigortasi from "./pages/ImmSigortasi";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
           <Route path="/sigorta-teminatlari" element={<SigortaTeminat />} />
           <Route path="/trafik-sigortasi" element={<TrafikSigortasi />} />
           <Route path="/kasko" element={<KaskoSigortasi />} />
+          <Route path="/imm" element={<ImmSigortasi />} />
 
           {/* 404 Sayfası */}
         </Routes>

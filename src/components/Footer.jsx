@@ -30,6 +30,9 @@ const Footer = () => {
               <a href="/kasko">Kasko Sigortası</a>
             </li>
             <li>
+              <a href="/imm">İMM</a>
+            </li>
+            <li>
               <a href="/dask">DASK Sigortası</a>
             </li>
             <li>
@@ -96,6 +99,9 @@ const Footer = () => {
               </li>
               <li>
                 <a href="/dask">DASK Sigortası</a>
+              </li>
+              <li>
+                <a href="/imm">İMM</a>
               </li>
               <li>
                 <a href="/tamamlayici-saglik">Tamamlayıcı Sağlık Sigortası</a>

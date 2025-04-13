@@ -49,7 +49,7 @@ const Navbar = () => {
                   </h4>
                   <a href="/trafik-sigortasi">Zorunlu Trafik Sigortası</a>
                   <a href="/kasko">Kasko Sigortası</a>
-                  <a href="#">İhtiyari Mali Mesuliyet Sigortası</a>
+                  <a href="/imm">İhtiyari Mali Mesuliyet Sigortası</a>
                 </div>
                 <div className="dropdown-column">
                   <h4>
@@ -128,7 +128,7 @@ const Navbar = () => {
                     <a href="/kasko">Kasko Sigortası</a>
                   </li>
                   <li>
-                    <a href="#">İhtiyari Mali Mesuliyet Sigortası</a>
+                    <a href="/imm">İhtiyari Mali Mesuliyet Sigortası</a>
                   </li>
 
                   <h5>Doğal Afet</h5>
