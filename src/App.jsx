@@ -16,6 +16,7 @@ import Konum from "./pages/Konum";
 import HasarAninda from "./pages/HasarAninda";
 import SigortaTeminat from "./pages/SigortaTeminat";
 import TrafikSigortasi from "./pages/TrafikSigortasi";
+import KaskoSigortasi from "./pages/KaskoSigortasi";
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
           <Route path="/hasar-aninda" element={<HasarAninda />} />
           <Route path="/sigorta-teminatlari" element={<SigortaTeminat />} />
           <Route path="/trafik-sigortasi" element={<TrafikSigortasi />} />
+          <Route path="/kasko" element={<KaskoSigortasi />} />
 
           {/* 404 Sayfası */}
         </Routes>
