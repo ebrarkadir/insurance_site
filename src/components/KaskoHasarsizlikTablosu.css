@@ -1,0 +1,109 @@
+.kasko-hasarsizlik-container {
+    width: 100vw;
+    padding: 40px 20px;
+    background-color: #f4f6f8;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .kasko-hasarsizlik-baslik {
+    font-size: 1.8rem;
+    color: #003087;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .kasko-tarih {
+    color: #003087;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+  
+  .kasko-hasarsizlik-table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+  }
+  
+  .kasko-hasarsizlik-tablo th:nth-child(1),
+  .kasko-hasarsizlik-tablo td:nth-child(1) {
+    width: 55%;
+  }
+  
+  .kasko-hasarsizlik-tablo th:nth-child(2),
+  .kasko-hasarsizlik-tablo td:nth-child(2) {
+    width: 25%;
+  }
+  
+  .kasko-hasarsizlik-tablo th:nth-child(3),
+  .kasko-hasarsizlik-tablo td:nth-child(3) {
+    width: 20%;
+  }
+  
+  .kasko-hasarsizlik-tablo {
+    width: 100%;
+    max-width: 1400px;
+    min-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    color: #000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    table-layout: fixed;
+    word-wrap: break-word;
+  }
+  
+  .kasko-hasarsizlik-tablo thead {
+    background-color: #003087;
+    color: white;
+  }
+  
+  .kasko-hasarsizlik-tablo th,
+  .kasko-hasarsizlik-tablo td {
+    border: 1px solid #ddd;
+    padding: 12px 16px;
+    text-align: center;
+    color: #000;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+  }
+  
+  .kasko-hasarsizlik-tablo tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .kasko-hasarsizlik-tablo tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  .kasko-hasarsizlik-tablo thead th {
+    background-color: #003087;
+    color: #ffffff !important; /* Zorunlu beyaz renk */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .kasko-hasarsizlik-container {
+      padding: 24px 12px;
+    }
+  
+    .kasko-hasarsizlik-baslik {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+  
+    .kasko-tarih {
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+  
+    .kasko-hasarsizlik-tablo {
+      font-size: 0.75rem;
+      min-width: 600px;
+    }
+  
+    .kasko-hasarsizlik-tablo th,
+    .kasko-hasarsizlik-tablo td {
+      padding: 8px 6px;
+    }
+  }
+  
