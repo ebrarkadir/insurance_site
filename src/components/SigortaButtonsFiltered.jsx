@@ -14,7 +14,11 @@ const sigortaOptions = [
   { path: "/kasko", icon: kaskoIcon, label: "Kasko" },
   { path: "/imm", icon: immIcon, label: "İMM" },
   { path: "/dask", icon: daskIcon, label: "DASK" },
-  { path: "/tamamlayici-saglik", icon: tamamlayiciIcon, label: "Tamamlayıcı Sağlık" },
+  {
+    path: "/tamamlayici-saglik",
+    icon: tamamlayiciIcon,
+    label: "Tamamlayıcı Sağlık",
+  },
   { path: "/seyahat-saglik", icon: seyahatIcon, label: "Seyahat Sağlık" },
 ];
 
@@ -26,15 +30,17 @@ const SigortaButtonsFiltered = () => {
   );
 
   return (
-    <div className="sigorta-button-wrapper">
-      <h2 style={{ marginBottom: "1rem", color: "#000" }}>Diğer Sigortalar</h2>
-      <div className="sigorta-bottom-row">
-        {filteredOptions.map(({ path, icon, label }) => (
-          <Link key={path} to={path} className="sigorta-card small">
-            <img src={icon} alt={label} className="sigorta-icon" />
-            <span className="sigorta-title">{label}</span>
-          </Link>
-        ))}
+    <div className="filtered-button-wrapper">
+      <div className="filtered-content">
+        <h2 className="filtered-title-section">Diğer Sigortalar</h2>
+        <div className="filtered-button-row">
+          {filteredOptions.map(({ path, icon, label }, index) => (
+            <Link key={path} to={path} className="filtered-card-item">
+              <img src={icon} alt={label} className="filtered-icon" />
+              <span className="filtered-title">{label}</span>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

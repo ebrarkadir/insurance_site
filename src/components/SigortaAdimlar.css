@@ -57,25 +57,25 @@
 @media (max-width: 768px) {
   .adimlar-wrapper {
     flex-direction: column;
+    gap: 16px; /* Araları daha yakın oldu */
     align-items: center;
-    gap: 24px; /* daha az boşluk */
   }
 
   .adim-kutu {
-    margin-bottom: 0px; /* ekstra boşluk kaldırıldı */
+    width: 100%;
+    max-width: 220px;
   }
 
   .adim-numara {
-    width: 60px;
-    height: 60px;
-    font-size: 1.3rem;
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
   }
 
   .adim-text {
-    font-size: 1rem;
-  }
-
-  .sigorta-adimlar-container {
-    padding: 30px 10px;
+    font-size: 0.95rem;
+    text-align: center;
   }
 }
+
+

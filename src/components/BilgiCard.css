@@ -1,0 +1,158 @@
+.bilgi-card {
+    width: 280px;
+    background-color: white;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  }
+  
+  
+  
+  .bilgi-card img {
+    width: 100%;
+    max-height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .bilgi-card h3 {
+    font-size: 1.1rem;
+    color: #003087;
+    margin-bottom: 10px;
+  }
+  
+  .bilgi-card p {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 14px;
+  }
+  
+  .devam-btn {
+    padding: 10px 16px;
+    background-color: #003087;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .devam-btn:hover {
+    background-color: #002060;
+  }
+  
+  /* Popup stilleri */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-icerik {
+    background-color: white;
+    max-width: 800px;
+    width: 90%;
+    padding: 30px;
+    border-radius: 12px;
+    position: relative;
+    overflow-y: auto;
+    max-height: 90vh;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup-icerik h2 {
+    font-size: 1.4rem;
+    color: #003087;
+    margin-bottom: 16px;
+  }
+  
+  .popup-icerik p {
+    font-size: 1rem;
+    color: #444;
+    white-space: pre-line;
+    line-height: 1.6;
+  }
+  
+  .kapat-btn {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #888;
+    cursor: pointer;
+  }
+  
+  .kapat-btn:hover {
+    color: #003087;
+  }
+  
+  /* Responsive grid için (bilgi kartlarını saracak divde kullanılır) */
+  .bilgi-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    padding: 40px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .bilgi-card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      padding: 16px;
+    }
+  
+    .bilgi-card {
+      width: calc(50% - 12px); /* 2 kart yan yana */
+      max-width: 160px;
+      padding: 8px;
+      border-radius: 8px;
+    }
+  
+    .bilgi-card img {
+      max-height: 80px;
+      border-radius: 6px;
+      margin-bottom: 6px;
+    }
+  
+    .bilgi-card h3 {
+      font-size: 0.8rem;
+      margin-bottom: 4px;
+      line-height: 1.2;
+    }
+  
+    .bilgi-card p {
+      font-size: 0.75rem;
+      line-height: 1.3;
+      margin-bottom: 8px;
+    }
+  
+    .devam-btn {
+      font-size: 0.75rem;
+      padding: 6px 10px;
+    }
+  }
+  
+  
+  
+  
+  
