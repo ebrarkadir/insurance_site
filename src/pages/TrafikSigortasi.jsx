@@ -28,6 +28,7 @@ const TrafikSigortasi = () => {
     setShowPopup(false);
   };
 
+  
   return (
     <div className="trafik-wrapper">
       <h1 className="form-title">Zorunlu Trafik Sigortası</h1>

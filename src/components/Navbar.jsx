@@ -55,7 +55,7 @@ const Navbar = () => {
                   <h4>
                     <FaHome className="icon" /> Doğal Afet
                   </h4>
-                  <a href="#">DASK Sigortası</a>
+                  <a href="/dask">DASK Sigortası</a>
                 </div>
                 <div className="dropdown-column">
                   <h4>
@@ -133,7 +133,7 @@ const Navbar = () => {
 
                   <h5>Doğal Afet</h5>
                   <li>
-                    <a href="#">DASK Sigortası</a>
+                    <a href="/dask">DASK Sigortası</a>
                   </li>
 
                   <h5>Sağlık</h5>
