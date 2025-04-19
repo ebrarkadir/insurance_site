@@ -142,7 +142,7 @@ const TamamlayiciSaglik = () => {
           },
         ]}
       />
-       <AnlasmaliSirketler />
+      <AnlasmaliSirketler />
 
       {/* Görselli Bilgi Kartları */}
       <h2 className="rehber">Tamamlayıcı Sağlık Sigortası Rehberi</h2>
@@ -151,30 +151,32 @@ const TamamlayiciSaglik = () => {
           title="Tamamlayıcı Sağlık Sigortası Neden Tercih Edilmeli?"
           image={ts1}
           summary="Özel hastanelerde SGK fark ücretlerini ödemeden tedavi olun."
-          fullContent="SGK’nın anlaşmalı olduğu özel hastanelerde tedavi olunduğunda, SGK belirli bir kısmını öder; kalan farkı hasta öder. Tamamlayıcı Sağlık Sigortası bu fark ücretlerini karşılayarak size ek maliyet çıkarmadan sağlık hizmeti almanızı sağlar."
+          fullContent="Tamamlayıcı Sağlık Sigortası, SGK kapsamındaki bireylerin özel hastanelerde ek ücret ödemeden sağlık hizmeti alabilmelerini sağlar. SGK anlaşmalı özel hastanelerde muayene olduğunuzda devlet bir kısmını öder, ancak geri kalan 'fark ücreti' hastaya aittir. TSS, bu farkı karşılar. Böylece hasta, kaliteli sağlık hizmetinden ek ücret ödemeden yararlanabilir. TSS ile hem bütçenizi korursunuz hem de daha hızlı ve konforlu bir tedavi süreci geçirirsiniz. Özellikle yoğun kamu hastanelerinden kaçınmak isteyenler için ideal bir çözümdür."
         />
+
         <BilgiCard
           title="TSS ile Nelerden Tasarruf Edilir?"
           image={ts2}
           summary="Yüksek muayene, tetkik ve ameliyat ücretlerinden korunursunuz."
-          fullContent="Özellikle büyük şehirlerde özel hastanelerdeki ücretler oldukça yüksektir. TSS, bu fark ücretlerini üstlenerek sizi ekonomik anlamda güvence altına alır. Muayene, tahlil, röntgen, MR gibi birçok hizmet ücretsiz olur."
+          fullContent="Tamamlayıcı Sağlık Sigortası sayesinde özellikle özel hastanelerde karşılaşabileceğiniz yüksek maliyetlerden korunursunuz. Sadece muayene ücretleri değil, tahlil, röntgen, MR, tomografi gibi görüntüleme hizmetleri de poliçeye dahil olabilir. Yatış gereken durumlarda ameliyat, yoğun bakım, refakatçi hizmetleri gibi giderlerin büyük bir kısmı da karşılanır. Bu sigorta türü, beklenmeyen sağlık masraflarını minimuma indirerek hem sağlık güvencesi hem de maddi huzur sunar."
         />
+
         <BilgiCard
           title="TSS’yi Kimler Alabilir?"
           image={ts3}
           summary="SGK'lı herkes bireysel ya da aile planı ile sigorta yaptırabilir."
-          fullContent="18 yaş üstü SGK’lı bireyler bireysel olarak, aile bireyleriyle birlikte ise toplu olarak tamamlayıcı sağlık sigortası yaptırabilir. Çocuklar 0-18 yaş aralığında ebeveyn ile birlikte sigortalanabilir."
+          fullContent="Tamamlayıcı Sağlık Sigortası, SGK’ya bağlı olan 18–65 yaş arasındaki tüm bireyler için uygundur. İster bireysel ister aile planı şeklinde düzenlenebilir. Anne-baba ile birlikte çocuklar da (0-18 yaş arası) poliçeye dahil edilebilir. Bazı sigorta şirketleri geniş yaş aralıkları sunarak daha fazla kişiye ulaşmayı hedeflemektedir. Hamilelik planlayan bireyler için özel teminatlı planlar da mevcuttur. Böylece hem sizin hem de ailenizin sağlığı güvence altına alınır."
         />
+
         <BilgiCard
           title="Acil Durumlar ve Yatışlar Kapsamda mı?"
           image={ts4}
           summary="Evet, hastane yatışları ve acil müdahaleler genellikle kapsama dahildir."
-          fullContent="Tamamlayıcı sağlık sigortası çoğu poliçede yatarak tedavileri ve acil müdahaleleri kapsar. Yoğun bakım, ameliyat, anestezi gibi durumlar da bu teminatlar içinde yer alır."
+          fullContent="Birçok tamamlayıcı sağlık sigortası poliçesi, acil servis hizmetlerinden yatarak tedaviye kadar geniş bir kapsam sunar. Örneğin trafik kazası, ani hastalıklar veya ciddi yaralanmalar gibi durumlarda acil müdahale teminatı devreye girer. Yatarak tedavilerde ise ameliyat, yoğun bakım, refakatçi hizmetleri, anestezi ve hemşirelik hizmetleri gibi detaylar poliçe kapsamında karşılanır. Bu da ciddi sağlık sorunlarında yüksek fatura riskini ortadan kaldırarak bireylere güvenli bir çözüm sunar."
         />
       </div>
-
-     
-      <SigortaButtonsFiltered />
+        <SigortaButtonsFiltered />
+      
     </div>
   );
 };
