@@ -183,7 +183,7 @@ const SeyahatSaglik = () => {
             type="button"
             className="submit-btn"
             onClick={kisiEkle}
-            style={{ backgroundColor: "#5a7fff" }}
+            style={{ backgroundColor: "#003087" }}
           >
             Kişi Ekle
           </button>
