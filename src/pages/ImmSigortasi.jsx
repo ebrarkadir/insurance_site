@@ -20,7 +20,6 @@ const ImmSigortasi = () => {
   const [telefon, setTelefon] = useState("");
   const [showPopup, setShowPopup] = useState(false);
 
-  
   const handleSubmit = () => {
     setTimeout(() => setShowPopup(true), 300);
   };
@@ -124,20 +123,22 @@ const ImmSigortasi = () => {
           )}
 
           <div className="telefon-wrapper">
-            <span className="telefon-prefix">+90</span>
-            <input
-              type="tel"
-              name="telefon"
-              placeholder="5XXXXXXXXX"
-              value={telefon}
-              onChange={(e) =>
-                setTelefon(e.target.value.replace(/\D/g, "").slice(0, 10))
-              }
-              pattern="5\d{9}"
-              maxLength="10"
-              required
-              className="telefon-input"
-            />
+            <div className="telefon-input-group">
+              <span className="telefon-prefix">+90</span>
+              <input
+                type="tel"
+                name="telefon"
+                placeholder="5XXXXXXXXX"
+                value={telefon}
+                onChange={(e) =>
+                  setTelefon(e.target.value.replace(/\D/g, "").slice(0, 10))
+                }
+                pattern="5\d{9}"
+                maxLength="10"
+                required
+                className="telefon-input"
+              />
+            </div>
           </div>
 
           <p className="form-info">

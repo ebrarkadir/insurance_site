@@ -49,6 +49,46 @@
   background-color: #003087;
   color: #fff;
 }
+.telefon-wrapper {
+  width: 100%;
+}
+
+.telefon-input-group {
+  display: flex;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.telefon-prefix {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 12px 16px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #ccc;
+  /* ✅ kenarlık köşeye taşmasın diye radius sıfırla */
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.telefon-input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: white;
+  /* ✅ border yok, radius yok */
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+
+
 
 .trafik-form {
   display: flex;

@@ -8,7 +8,7 @@ import BilgiCard from "../components/BilgiCard";
 import çalıntı from "../assets/blog/çalıntı.jpg";
 import esdegerResmi2 from "../assets/blog/eşdeğer2.jpg";
 import sel from "../assets/blog/sel.jpg";
-import kaskoResmi from "../assets/blog/kaskoPolice.jpg"
+import kaskoResmi from "../assets/blog/kaskoPolice.jpg";
 import KaskoHasarsizlikTablosu from "../components/KaskoHasarsizlikTablosu";
 
 const KaskoSigortasi = () => {
@@ -124,20 +124,22 @@ const KaskoSigortasi = () => {
           )}
 
           <div className="telefon-wrapper">
-            <span className="telefon-prefix">+90</span>
-            <input
-              type="tel"
-              name="telefon"
-              placeholder="5XXXXXXXXX"
-              value={telefon}
-              onChange={(e) =>
-                setTelefon(e.target.value.replace(/\D/g, "").slice(0, 10))
-              }
-              pattern="5\d{9}"
-              maxLength="10"
-              required
-              className="telefon-input"
-            />
+            <div className="telefon-input-group">
+              <span className="telefon-prefix">+90</span>
+              <input
+                type="tel"
+                name="telefon"
+                placeholder="5XXXXXXXXX"
+                value={telefon}
+                onChange={(e) =>
+                  setTelefon(e.target.value.replace(/\D/g, "").slice(0, 10))
+                }
+                pattern="5\d{9}"
+                maxLength="10"
+                required
+                className="telefon-input"
+              />
+            </div>
           </div>
 
           <p className="form-info">
@@ -206,7 +208,9 @@ const KaskoSigortasi = () => {
           title="Bir Kasko Poliçesinde Hangi Teminatlar Vardır?"
           image={kaskoResmi}
           summary="Kasko poliçesinde çeşitli doğal afet ve kaza teminatları yer alabilir."
-          fullContent={"Kasko sigortası genel olarak aracın yanması, çalınması, çalınmaya teşebbüs edilmesi gibi durumları ve kaza sonucu oluşabilecek zararları güvence alır. Bunların yanında kasko poliçeleri kapsamları bakımından genişletilebilmektedir. Bir kasko poliçesi aşağıdaki teminatları da detaylı bir şekilde içerebilmekte, kimi zaman bu teminatlar isteğe bağlı olarak da poliçeye eklenebilmektedir: Aracın grev, lokavt, kargaşalık, halk hareketleri ve terör nedeniyle uğrayacağı zararlar, araçta deprem ve yanardağ püskürmesi, sel ve su baskını nedeniyle oluşan zararlar, sigara yanığı, yetkili olmayan kişiler tarafından aracın çekilmesi sonucu araçta oluşan zararlar, hukuksal koruma, sıfır kilometre araçlarda yeni değer klozu, mini onarım, aracın anahtarla çalınması, 3. şahıs bedeni zararlar (maddi+bedeni), ferdi kaza teminatı: Ölüm, sürekli sakatlık, tedavi teminatı (sürücü ve yolcular için)."}
+          fullContent={
+            "Kasko sigortası genel olarak aracın yanması, çalınması, çalınmaya teşebbüs edilmesi gibi durumları ve kaza sonucu oluşabilecek zararları güvence alır. Bunların yanında kasko poliçeleri kapsamları bakımından genişletilebilmektedir. Bir kasko poliçesi aşağıdaki teminatları da detaylı bir şekilde içerebilmekte, kimi zaman bu teminatlar isteğe bağlı olarak da poliçeye eklenebilmektedir: Aracın grev, lokavt, kargaşalık, halk hareketleri ve terör nedeniyle uğrayacağı zararlar, araçta deprem ve yanardağ püskürmesi, sel ve su baskını nedeniyle oluşan zararlar, sigara yanığı, yetkili olmayan kişiler tarafından aracın çekilmesi sonucu araçta oluşan zararlar, hukuksal koruma, sıfır kilometre araçlarda yeni değer klozu, mini onarım, aracın anahtarla çalınması, 3. şahıs bedeni zararlar (maddi+bedeni), ferdi kaza teminatı: Ölüm, sürekli sakatlık, tedavi teminatı (sürücü ve yolcular için)."
+          }
         />
       </div>
 

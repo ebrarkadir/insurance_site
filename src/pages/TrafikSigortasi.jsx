@@ -28,7 +28,6 @@ const TrafikSigortasi = () => {
     setShowPopup(false);
   };
 
-  
   return (
     <div className="trafik-wrapper">
       <h1 className="form-title">Zorunlu Trafik Sigortası</h1>
@@ -123,22 +122,23 @@ const TrafikSigortasi = () => {
             />
           )}
 
-          {/* ✅ Sadece 5XXXXXXXXX şeklinde 10 haneli Türk numarası */}
           <div className="telefon-wrapper">
-            <span className="telefon-prefix">+90</span>
-            <input
-              type="tel"
-              name="telefon"
-              placeholder="5XXXXXXXXX"
-              value={telefon}
-              onChange={(e) =>
-                setTelefon(e.target.value.replace(/\D/g, "").slice(0, 10))
-              }
-              pattern="5\d{9}"
-              maxLength="10"
-              required
-              className="telefon-input"
-            />
+            <div className="telefon-input-group">
+              <span className="telefon-prefix">+90</span>
+              <input
+                type="tel"
+                name="telefon"
+                placeholder="5XXXXXXXXX"
+                value={telefon}
+                onChange={(e) =>
+                  setTelefon(e.target.value.replace(/\D/g, "").slice(0, 10))
+                }
+                pattern="5\d{9}"
+                maxLength="10"
+                required
+                className="telefon-input"
+              />
+            </div>
           </div>
 
           <p className="form-info">
