@@ -61,13 +61,13 @@ const Navbar = () => {
                   <h4>
                     <FaHeartbeat className="icon" /> Sağlık
                   </h4>
-                  <a href="#">Tamamlayıcı Sağlık Sigortası</a>
+                  <a href="/tamamlayici-saglik">Tamamlayıcı Sağlık Sigortası</a>
                 </div>
                 <div className="dropdown-column">
                   <h4>
                     <FaPlaneDeparture className="icon" /> Seyahat
                   </h4>
-                  <a href="#">Seyahat Sağlık Sigortası</a>
+                  <a href="/seyahat-saglik">Seyahat Sağlık Sigortası</a>
                 </div>
               </div>
             </li>
@@ -138,12 +138,12 @@ const Navbar = () => {
 
                   <h5>Sağlık</h5>
                   <li>
-                    <a href="#">Tamamlayıcı Sağlık Sigortası</a>
+                    <a href="/tamamlayici-saglik">Tamamlayıcı Sağlık Sigortası</a>
                   </li>
 
                   <h5>Seyahat</h5>
                   <li>
-                    <a href="#">Seyahat Sağlık Sigortası</a>
+                    <a href="/seyahat-saglik">Seyahat Sağlık Sigortası</a>
                   </li>
                 </ul>
               </details>
