@@ -23,6 +23,7 @@
   display: flex;
   align-items: center;
 }
+
 .navbar-left a {
   display: flex;
   align-items: center;
@@ -40,16 +41,6 @@
   color: #003087;
   margin-left: 8px;
   text-decoration: none;
-  pointer-events: auto;
-}
-
-/* Tüm hover efektlerini iptal et */
-.site-title:hover,
-.site-title:focus,
-.site-title:active {
-  color: #003087;
-  text-decoration: none;
-  background-color: transparent;
 }
 
 .navbar-links {
@@ -58,10 +49,6 @@
   gap: 24px;
   margin: 0;
   padding: 0;
-  position: relative;
-}
-
-.navbar-links li {
   position: relative;
 }
 
@@ -79,7 +66,7 @@
   background-color: rgba(0, 48, 135, 0.08);
 }
 
-/* DROPDOWN */
+/* Dropdown */
 .dropdown:hover .dropdown-menu {
   display: flex;
 }
@@ -103,14 +90,6 @@
 .dropdown-menu.single-column {
   min-width: 320px;
   justify-content: flex-start;
-  gap: 0;
-}
-
-.dropdown-column {
-  display: flex;
-  flex-direction: column;
-  min-width: 180px;
-  align-items: flex-start;
 }
 
 .dropdown-column h4 {
@@ -125,18 +104,17 @@
 }
 
 .dropdown-column a {
-  font-size: 0.85rem !important;
-  color: #2b4a83 !important;
+  font-size: 0.85rem;
+  color: #2b4a83;
   margin-bottom: 6px;
   text-decoration: none;
-  line-height: 1.5;
 }
 
 .dropdown-column a:hover {
   text-decoration: underline;
 }
 
-/* HAMBURGER */
+/* Hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -156,17 +134,58 @@
   display: none;
 }
 
-/* DESKTOP / MOBILE SPLIT */
+/* Desktop / Mobile */
 .desktop-menu {
   display: flex;
   gap: 24px;
+  align-items: center;
+  width: 100%;
 }
 
 .mobile-menu {
   display: none;
 }
 
-/* RESPONSIVE */
+/* WhatsApp ikon masaüstü sağ uçta direkt yeşil */
+.whatsapp-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.whatsapp-icon a {
+  color: #25d366; /* ikon direkt yeşil */
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-icon a:hover {
+  transform: scale(1.15); /* sadece büyüme efekti */
+}
+
+/* WhatsApp ikon mobil hamburger menüde yukarıya alınmış */
+.mobile-whatsapp-icon {
+  margin-top: auto;
+  margin-bottom: 2rem; /* biraz yukarı alındı */
+  padding-top: 1rem;
+  border-top: 1px solid #ccd4e0;
+}
+
+.mobile-whatsapp-icon a {
+  color: #25d366; /* ikon direkt yeşil */
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mobile-whatsapp-icon a:hover {
+  transform: scale(1.05); /* sade hover büyüme efekti */
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .navbar-links {
     flex-direction: column;
@@ -176,11 +195,10 @@
     background-color: white;
     height: 100vh;
     width: 260px;
-    padding-top: 6rem;
-    padding-left: 2rem;
-    gap: 20px;
+    padding: 6rem 2rem 4rem;
     box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
     transition: right 0.3s ease;
+    display: flex;
     z-index: 99;
   }
 
@@ -226,8 +244,12 @@
   }
 
   .mobile-menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
   }
+
   .mobile-menu details {
     border-bottom: 1px solid #ccd4e0;
     padding-bottom: 8px;
@@ -235,14 +257,13 @@
   }
 
   .mobile-menu details summary {
-    position: relative;
     font-weight: 700;
     cursor: pointer;
     color: #003087;
-    font-size: 1rem;
     padding: 10px 12px;
-    text-transform: uppercase;
     list-style: none;
+    text-transform: uppercase;
+    position: relative;
   }
 
   .mobile-menu details summary::after {
@@ -250,8 +271,6 @@
     position: absolute;
     right: 16px;
     font-size: 1.2rem;
-    color: #003087;
-    transition: transform 0.2s ease;
   }
 
   .mobile-menu details[open] summary::after {
@@ -260,7 +279,6 @@
 
   .mobile-menu ul {
     padding-left: 0.5rem;
-    margin-bottom: 1rem;
   }
 
   .mobile-menu h5 {
@@ -272,8 +290,7 @@
   }
 
   .mobile-menu li a {
-    color: #000000;
-    text-decoration: none;
+    color: #000;
     font-size: 0.95rem;
   }
 

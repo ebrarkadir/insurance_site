@@ -1,39 +1,54 @@
 .sigorta-bilgi-kutulari-wrapper {
-    background-color: #f4f6f8;
-    padding: 40px 20px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
+  background-color: #f4f6f8;
+  padding: 40px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sigorta-bilgi-kutulari-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sigorta-bilgi-karti {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.sigorta-bilgi-karti:hover {
+  box-shadow: 0 4px 16px rgba(0, 48, 135, 0.1);
+}
+
+.sigorta-bilgi-karti h3 {
+  font-size: 1.2rem;
+  color: #003087;
+  margin-bottom: 10px;
+}
+
+.sigorta-bilgi-karti p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ✅ Mobil görünümde 2'li düzen */
+@media (max-width: 768px) {
   .sigorta-bilgi-kutulari-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
-  
-  .sigorta-bilgi-karti {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .sigorta-bilgi-karti:hover {
-    box-shadow: 0 4px 16px rgba(0, 48, 135, 0.1);
-  }
-  
+
   .sigorta-bilgi-karti h3 {
-    font-size: 1.2rem;
-    color: #003087;
-    margin-bottom: 10px;
+    font-size: 0.8rem;
   }
-  
+
   .sigorta-bilgi-karti p {
-    font-size: 0.95rem;
-    color: #333;
-    line-height: 1.6;
+    font-size: 0.7rem;
   }
-  
+}

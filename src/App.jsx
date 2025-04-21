@@ -8,7 +8,6 @@ import AnlasmaliSirketler from "./components/AnlasmaliSirketler";
 import Footer from "./components/Footer";
 import BizeUlasin from "./pages/BizeUlasin";
 import SikcaSorulanSorular from "./pages/SikcaSorulanSorular";
-// Sayfa bileşenleri
 import SirketBilgileri from "./pages/SirketBilgileri";
 import Ekibimiz from "./pages/Ekibimiz";
 import Iletisim from "./pages/Iletisim";
@@ -21,14 +20,15 @@ import ImmSigortasi from "./pages/ImmSigortasi";
 import DaskSigortasi from "./pages/DaskSigortasi";
 import TamamlayiciSaglik from "./pages/TamamlayiciSaglik";
 import SeyahatSaglik from "./pages/SeyahatSaglik";
+import ScrollToTop from "./components/ScrollToTop"; // 👈 buraya ekle
 
 function App() {
   return (
     <Router>
+      <ScrollToTop /> {/* 👈 buraya ekle */}
       <Navbar />
       <div style={{ marginTop: "80px" }}>
         <Routes>
-          {/* Anasayfa */}
           <Route
             path="/"
             element={
@@ -39,8 +39,6 @@ function App() {
               </>
             }
           />
-
-          {/* Sayfalar */}
           <Route path="/sirket-bilgileri" element={<SirketBilgileri />} />
           <Route path="/ekibimiz" element={<Ekibimiz />} />
           <Route path="/iletisim" element={<Iletisim />} />
@@ -58,7 +56,6 @@ function App() {
           <Route path="/dask" element={<DaskSigortasi />} />
           <Route path="/tamamlayici-saglik" element={<TamamlayiciSaglik />} />
           <Route path="/seyahat-saglik" element={<SeyahatSaglik />} />
-          {/* 404 Sayfası */}
         </Routes>
       </div>
       <Footer />
