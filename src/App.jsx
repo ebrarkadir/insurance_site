@@ -21,11 +21,16 @@ import DaskSigortasi from "./pages/DaskSigortasi";
 import TamamlayiciSaglik from "./pages/TamamlayiciSaglik";
 import SeyahatSaglik from "./pages/SeyahatSaglik";
 import ScrollToTop from "./components/ScrollToTop"; // 👈 buraya ekle
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <Router>
-      <ScrollToTop /> {/* 👈 buraya ekle */}
+      <Helmet>
+        <title>Çetin Sigorta</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Helmet>
+      <ScrollToTop /> 
       <Navbar />
       <div style={{ marginTop: "80px" }}>
         <Routes>
