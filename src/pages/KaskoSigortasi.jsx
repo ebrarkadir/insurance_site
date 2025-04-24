@@ -94,9 +94,9 @@ const KaskoSigortasi = () => {
                 placeholder="T.C. Kimlik No"
                 value={tcKimlik}
                 onChange={(e) => setTcKimlik(e.target.value)}
-                pattern="\d{12}"
-                maxLength="12"
-                minLength="12"
+                pattern="\d{11}"
+                maxLength="11"
+                minLength="11"
                 required
               />
               <input
@@ -116,9 +116,9 @@ const KaskoSigortasi = () => {
               placeholder="Vergi No"
               value={vergiNo}
               onChange={(e) => setVergiNo(e.target.value)}
-              pattern="\d{11}"
-              maxLength="11"
-              minLength="11"
+              pattern="\d{10}"
+              maxLength="10"
+              minLength="10"
               required
             />
           )}

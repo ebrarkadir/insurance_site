@@ -136,8 +136,8 @@ const SeyahatSaglik = () => {
                   placeholder="T.C. Kimlik No"
                   value={kisi.tc}
                   onChange={(e) => kisiGuncelle(index, "tc", e.target.value)}
-                  pattern="\d{12}"
-                  maxLength="12"
+                  pattern="\d{1}"
+                  maxLength="11"
                   required
                   style={{ flex: 1 }}
                 />

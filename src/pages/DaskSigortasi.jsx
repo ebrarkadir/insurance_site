@@ -94,8 +94,8 @@ const DaskSigortasi = () => {
               placeholder="T.C. Kimlik No"
               value={tcKimlik}
               onChange={(e) => setTcKimlik(e.target.value)}
-              pattern="\d{12}"
-              maxLength="12"
+              pattern="\d{11}"
+              maxLength="11"
               required
             />
           )}
@@ -107,8 +107,8 @@ const DaskSigortasi = () => {
               placeholder="Vergi No"
               value={vergiNo}
               onChange={(e) => setVergiNo(e.target.value)}
-              pattern="\d{11}"
-              maxLength="11"
+              pattern="\d{10}"
+              maxLength="10"
               required
             />
           )}

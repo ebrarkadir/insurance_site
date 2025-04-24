@@ -49,8 +49,8 @@ const TamamlayiciSaglik = () => {
             placeholder="T.C. Kimlik No"
             value={tc}
             onChange={(e) => setTc(e.target.value)}
-            pattern="\d{12}"
-            maxLength="12"
+            pattern="\d{11}"
+            maxLength="11"
             required
           />
 

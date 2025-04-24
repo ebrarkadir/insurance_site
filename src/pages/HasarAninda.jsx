@@ -15,13 +15,14 @@ const HasarAninda = () => {
   const currentPath = location.pathname;
 
   const firmalar = [
+    { name: "Ray", tel: "444 4 729", logo: ray },
     { name: "Allianz", tel: "0850 399 9999", logo: allianz },
     { name: "HDI", tel: "444 8 434", logo: hdi },
     { name: "Türk Nippon", tel: "0850 250 56 50", logo: nippon },
     { name: "Hepiyi", tel: "0850 241 78 00", logo: hepiyi },
     { name: "Quick", tel: "0850 755 1755", logo: quick },
     { name: "Magdeburger", tel: "0850 502 7373", logo: magdeburger },
-    { name: "Ray", tel: "444 4 729", logo: ray },
+    
   ];
 
   return (

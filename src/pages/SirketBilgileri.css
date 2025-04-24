@@ -73,44 +73,20 @@
   }
   
   @media (max-width: 768px) {
-    .sss-container {
+    .sirket-sayfasi-container {
       flex-direction: column;
       align-items: center;
       padding: 20px 12px;
     }
   
-    .hasar-sidebar {
+    .sirket-sidebar {
       display: none;
     }
   
-    .sss-left-panel {
+    .sirket-bilgileri-content {
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      align-items: center;
-    }
-  
-    .ek-bilgi-kutulari {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      align-items: center;
-    }
-  
-    .detayli-bilgi-kutusu,
-    .pdf-kutusu {
-      width: 100%;
-      max-width: 400px;
-    }
-  
-    .sss-content {
-      width: 100%;
-      padding: 20px;
+      padding: 24px;
       box-sizing: border-box;
     }
   }
-  
-  
   
