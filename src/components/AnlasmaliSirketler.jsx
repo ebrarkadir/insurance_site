@@ -22,13 +22,14 @@ const AnlasmaliSirketler = () => {
       <br />
 
       <div className="partner-logos">
-        <img src={ray} alt="HDI" />
         <img src={allianz} alt="Allianz" />
-        <img src={nippon} alt="Anadolu Sigorta" />
-        <img src={hepiyi} alt="Hepiyi" />
-        <img src={quick} alt="Quick" />
-        <img src={magdeburger} alt="Magdeburger" />
         <img src={hdi} alt="Ray Sigorta" />
+        <img src={ray} alt="HDI" />
+        <img src={quick} alt="Quick" />
+        <img src={hepiyi} alt="Hepiyi" />
+        <img src={magdeburger} alt="Magdeburger" />
+        <img src={nippon} alt="Anadolu Sigorta" />
+       
         
       </div>
     </div>

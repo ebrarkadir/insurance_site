@@ -1,79 +1,153 @@
 .sigorta-button-wrapper {
-    background-color: #f5f7fa; /* çok açık gri */
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
+  background-color: #f5f7fa;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1rem 1rem 1rem; /* ALT padding küçültüldü */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Daha Fazlası buton hizası */
+.more-button-container {
+  display: flex;
+  justify-content: center; /* sağ değil, ortaya alındı */
+  margin-top: 0; /* üst boşluk sıfırlandı */
+  margin-bottom: -50px; /* alttaki boşluğu azaltmak için negatif margin */
+}
+
+/* Üstteki iki büyük kutu */
+.sigorta-top-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.sigorta-bottom-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+.more-button-container {
+  display: flex;
+  justify-content: right;
+  margin-top: 12px;
+}
+
+.more-button {
+  background-color: transparent;
+  color: #003087;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.more-button:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.fade-slide {
+  animation: fadeSlideDown 0.3s ease-out forwards;
+}
+
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+    max-height: 0;
   }
-  
-  /* Üstteki iki büyük kutu */
-  .sigorta-top-row {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 500px;
   }
-  
-  .sigorta-bottom-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 1.5rem;
-    justify-content: center;
+}
+
+.fade-slide-hide {
+  animation: collapseFadeUp 0.25s ease-in forwards;
+}
+
+@keyframes collapseFadeUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 500px;
   }
-  
-  /* Genel kart stilleri */
-  .sigorta-card {
-    background-color: #f8f8f8;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    padding: 1.5rem;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+    max-height: 0;
   }
-  
-  .sigorta-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 48, 135, 0.2);
+}
+
+
+/* Genel kart stilleri */
+.sigorta-card {
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sigorta-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 48, 135, 0.2);
   background-color: #e6f0ff;
+}
+
+.sigorta-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.8rem;
+}
+
+.sigorta-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #003087;
+}
+
+.large {
+  width: 565px;
+}
+
+.small {
+  width: 100%;
+}
+
+/* Responsive destek */
+@media (max-width: 768px) {
+  .more-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 sütun */
+    gap: 0.8rem;
+    justify-content: center;
   }
-  
-  .sigorta-icon {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 0.8rem;
+
+  .more-buttons .sigorta-card {
+    padding: 1rem;
   }
-  
-  .sigorta-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #003087;
+
+  .more-buttons .sigorta-icon {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0.4rem;
   }
-  
-  .large {
-    width: 565px;
+
+  .more-buttons .sigorta-title {
+    font-size: 0.85rem;
   }
-  
-  .small {
-    width: 100%;
-  }
-  
-  /* Responsive destek */
-  @media (max-width: 768px) {
-    .sigorta-top-row {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .large {
-      width: 100%;
-    }
-  }
-  
+}
+

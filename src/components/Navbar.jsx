@@ -44,21 +44,29 @@ const Navbar = () => {
               <a href="#">Sigorta</a>
               <div className="dropdown-menu">
                 <div className="dropdown-column">
-                  <h4><FaCarSide className="icon" /> Araç</h4>
+                  <h4>
+                    <FaCarSide className="icon" /> Araç
+                  </h4>
                   <a href="/trafik-sigortasi">Zorunlu Trafik Sigortası</a>
                   <a href="/kasko">Kasko Sigortası</a>
                   <a href="/imm">İhtiyari Mali Mesuliyet Sigortası</a>
                 </div>
                 <div className="dropdown-column">
-                  <h4><FaHome className="icon" /> Doğal Afet</h4>
+                  <h4>
+                    <FaHome className="icon" /> Doğal Afet
+                  </h4>
                   <a href="/dask">DASK Sigortası</a>
                 </div>
                 <div className="dropdown-column">
-                  <h4><FaHeartbeat className="icon" /> Sağlık</h4>
+                  <h4>
+                    <FaHeartbeat className="icon" /> Sağlık
+                  </h4>
                   <a href="/tamamlayici-saglik">Tamamlayıcı Sağlık Sigortası</a>
                 </div>
                 <div className="dropdown-column">
-                  <h4><FaPlaneDeparture className="icon" /> Seyahat</h4>
+                  <h4>
+                    <FaPlaneDeparture className="icon" /> Seyahat
+                  </h4>
                   <a href="/seyahat-saglik">Seyahat Sağlık Sigortası</a>
                 </div>
               </div>
@@ -68,7 +76,9 @@ const Navbar = () => {
               <a href="#">Hakkımızda</a>
               <div className="dropdown-menu single-column">
                 <div className="dropdown-column">
-                  <h4><FaInfoCircle className="icon" /> Hakkımızda</h4>
+                  <h4>
+                    <FaInfoCircle className="icon" /> Hakkımızda
+                  </h4>
                   <a href="/sirket-bilgileri">Şirket Bilgileri</a>
                   <a href="/ekibimiz">Ekibimiz</a>
                 </div>
@@ -79,7 +89,9 @@ const Navbar = () => {
               <a href="/iletisim">İletişim</a>
               <div className="dropdown-menu single-column">
                 <div className="dropdown-column">
-                  <h4><span className="icon">📍</span> İletişim</h4>
+                  <h4>
+                    <span className="icon">📍</span> İletişim
+                  </h4>
                   <a href="/iletisim">İletişim Bilgileri</a>
                   <a href="/konum">Konum</a>
                 </div>
@@ -90,7 +102,9 @@ const Navbar = () => {
               <a href="#">Yardım Alın</a>
               <div className="dropdown-menu single-column">
                 <div className="dropdown-column">
-                  <h4><span className="icon">❓</span> Yardım Alın</h4>
+                  <h4>
+                    <span className="icon">❓</span> Yardım Alın
+                  </h4>
                   <a href="/bize-ulasin">Bize Ulaşın</a>
                   <a href="/sikca-sorulan-sorular">Sıkça Sorulan Sorular</a>
                   <a href="/hasar-aninda">Hasar Anında</a>
@@ -117,18 +131,32 @@ const Navbar = () => {
                 <summary>Sigorta</summary>
                 <ul>
                   <h5>Araç</h5>
-                  <li><a href="/trafik-sigortasi">Zorunlu Trafik Sigortası</a></li>
-                  <li><a href="/kasko">Kasko Sigortası</a></li>
-                  <li><a href="/imm">İhtiyari Mali Mesuliyet Sigortası</a></li>
+                  <li>
+                    <a href="/trafik-sigortasi">Zorunlu Trafik Sigortası</a>
+                  </li>
+                  <li>
+                    <a href="/kasko">Kasko Sigortası</a>
+                  </li>
+                  <li>
+                    <a href="/imm">İhtiyari Mali Mesuliyet Sigortası</a>
+                  </li>
 
                   <h5>Doğal Afet</h5>
-                  <li><a href="/dask">DASK Sigortası</a></li>
+                  <li>
+                    <a href="/dask">DASK Sigortası</a>
+                  </li>
 
                   <h5>Sağlık</h5>
-                  <li><a href="/tamamlayici-saglik">Tamamlayıcı Sağlık Sigortası</a></li>
+                  <li>
+                    <a href="/tamamlayici-saglik">
+                      Tamamlayıcı Sağlık Sigortası
+                    </a>
+                  </li>
 
                   <h5>Seyahat</h5>
-                  <li><a href="/seyahat-saglik">Seyahat Sağlık Sigortası</a></li>
+                  <li>
+                    <a href="/seyahat-saglik">Seyahat Sağlık Sigortası</a>
+                  </li>
                 </ul>
               </details>
             </li>
@@ -137,8 +165,12 @@ const Navbar = () => {
               <details>
                 <summary>HAKKIMIZDA</summary>
                 <ul>
-                  <li><a href="/sirket-bilgileri">Şirket Bilgileri</a></li>
-                  <li><a href="/ekibimiz">Ekibimiz</a></li>
+                  <li>
+                    <a href="/sirket-bilgileri">Şirket Bilgileri</a>
+                  </li>
+                  <li>
+                    <a href="/ekibimiz">Ekibimiz</a>
+                  </li>
                 </ul>
               </details>
             </li>
@@ -147,8 +179,12 @@ const Navbar = () => {
               <details>
                 <summary>İLETİŞİM</summary>
                 <ul>
-                  <li><a href="/iletisim">İletişim Bilgileri</a></li>
-                  <li><a href="/konum">Konum</a></li>
+                  <li>
+                    <a href="/iletisim">İletişim Bilgileri</a>
+                  </li>
+                  <li>
+                    <a href="/konum">Konum</a>
+                  </li>
                 </ul>
               </details>
             </li>
@@ -157,22 +193,30 @@ const Navbar = () => {
               <details>
                 <summary>YARDIM ALIN</summary>
                 <ul>
-                  <li><a href="/bize-ulasin">Bize Ulaşın</a></li>
-                  <li><a href="/sikca-sorulan-sorular">Sıkça Sorulan Sorular</a></li>
-                  <li><a href="/hasar-aninda">Hasar Anında</a></li>
-                  <li><a href="/sigorta-teminatlari">Sigorta Teminatları</a></li>
+                  <li>
+                    <a href="/bize-ulasin">Bize Ulaşın</a>
+                  </li>
+                  <li>
+                    <a href="/sikca-sorulan-sorular">Sıkça Sorulan Sorular</a>
+                  </li>
+                  <li>
+                    <a href="/hasar-aninda">Hasar Anında</a>
+                  </li>
+                  <li>
+                    <a href="/sigorta-teminatlari">Sigorta Teminatları</a>
+                  </li>
                 </ul>
               </details>
             </li>
 
-            {/* WhatsApp Icon Mobil */}
-            <li className="mobile-whatsapp-icon">
+            {/* WhatsApp butonunu buraya aldık */}
+            <li className="mobile-whatsapp-icon inline">
               <a
                 href="https://wa.me/905433347751"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaWhatsapp size={22} /> WhatsApp'tan Yazın
+                <FaWhatsapp size={22} /> WhatsApp’tan Yazın
               </a>
             </li>
           </div>

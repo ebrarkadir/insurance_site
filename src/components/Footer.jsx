@@ -151,8 +151,8 @@ const Footer = () => {
             <img src={logo} alt="logo" className="footer-logo-large" />
             <span>Çetin Sigorta</span>
           </div>
-          <p>Adres: Mecidiye Mahallesi Milli Birlik Caddesi</p>
-          <p>Tüplek Apartmanı No:102/B </p>
+          <p>Adres: Mecidiye Mahallesi </p>
+          <p>Milli Birlik Caddesi No:102/B </p>
           <p>Afyonkarahisar / Merkez</p>
           <p>
             E-posta:{" "}
@@ -163,7 +163,10 @@ const Footer = () => {
 
         <div className="footer-middle-right">
           <h2>
-            <FaPhoneAlt style={{ color: "grey" }} /> 0272 214 76 96
+            <FaPhoneAlt style={{ color: "grey" }} /> 05433347751, 05412400402
+          </h2>
+          <h2>
+            <FaPhoneAlt style={{ color: "grey" }} /> 02722147696
           </h2>
           <p>
             Sorularınız için numaramızdan bize ulaşarak destek alabilirsiniz.

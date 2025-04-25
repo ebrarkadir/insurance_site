@@ -186,11 +186,12 @@
 }
 
 
-.mobile-whatsapp-icon {
-  margin-top: auto;
-  padding-top: 1rem;
-  border-top: 1px solid #ccd4e0;
+.mobile-whatsapp-icon.inline {
+  margin-top: 10px;
+  border-top: none;
+  padding: 0 0 1rem 0;
 }
+
 
 .mobile-whatsapp-icon a {
   color: #25d366 !important;
@@ -201,6 +202,7 @@
   text-decoration: none;
   font-size: 1rem;
 }
+
 
 @media (max-width: 768px) {
   .navbar-links {

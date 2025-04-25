@@ -24,7 +24,7 @@ const Iletisim = () => {
         <h1>İletişim Bilgilerimiz</h1>
 
         <div className="iletisim-grid">
-          <div className="person-card full-width">
+          <div className="person-card first-row">
             <h3>Genel İletişim</h3>
             <p>
               <strong>Telefon:</strong> 0272 214 76 96
@@ -34,7 +34,7 @@ const Iletisim = () => {
             </p>
           </div>
 
-          <div className="person-card">
+          <div className="person-card first-row">
             <h3>Muammer Çetin</h3>
             <p>
               <strong>Telefon:</strong> 0543 334 77 51
@@ -50,7 +50,7 @@ const Iletisim = () => {
               <strong>Telefon:</strong> 0541 240 04 02
             </p>
             <p>
-              <strong>E-posta:</strong> orcuncetin03@hotmail.com
+              <strong>E-posta:</strong> orcun-cetin03@hotmail.com
             </p>
           </div>
 
@@ -61,16 +61,6 @@ const Iletisim = () => {
             </p>
             <p>
               <strong>E-posta:</strong> eneskayracetin@gmail.com
-            </p>
-          </div>
-
-          <div className="person-card">
-            <h3>Sibel Çetin</h3>
-            <p>
-              <strong>Telefon:</strong> 0549 212 00 03
-            </p>
-            <p>
-              <strong>E-posta:</strong> sevdesibelcetin@gmail.com
             </p>
           </div>
         </div>

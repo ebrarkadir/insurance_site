@@ -5,8 +5,8 @@ import HasarsizlikTablosu from "../components/HasarsizlikTablosu";
 import AnlasmaliSirketler from "../components/AnlasmaliSirketler";
 import SigortaButtonsFiltered from "../components/SigortaButtonsFiltered";
 import BilgiCard from "../components/BilgiCard";
-import çalıntı from "../assets/blog/çalıntı.jpg";
-import esdegerResmi2 from "../assets/blog/eşdeğer2.jpg";
+import calıntı from "../assets/blog/calıntı.jpg";
+import esdegerResmi2 from "../assets/blog/esdeger2.jpg";
 import sel from "../assets/blog/sel.jpg";
 import kaskoResmi from "../assets/blog/kaskoPolice.jpg";
 import KaskoHasarsizlikTablosu from "../components/KaskoHasarsizlikTablosu";
@@ -188,7 +188,7 @@ const KaskoSigortasi = () => {
       <div className="bilgi-card-grid">
         <BilgiCard
           title="Araç Çalınmasını Kasko Karşılar mı?"
-          image={çalıntı}
+          image={calıntı}
           summary="Kasko sigortası çalınma ve çalınmaya teşebbüs zararlarını kapsar."
           fullContent="Kasko sigortası sürücüleri çarpma, çarpılma, çalınma ve çalınmaya teşebbüs sırasında oluşabilecek zararlara karşı koruyan isteğe bağlı bir sigorta türüdür. Kasko sigortası poliçesi düzenlenirken ekletilen birçok teminat ile güvence kapsamı genişletilirken sigortalı daha geniş bir korumaya sahip olur. Kendi isteğine göre kapsamını belirlediği kasko sigortası ile araç sahibi, sigortalanan araçta meydana gelebilecek hasarın maddi yükünden kurtulur. Kasko sigortası aracı çeşitli nedenlerle oluşabilecek hasarlardan korumak amacıyla yaptırılan sigortadır. Poliçe düzenlenirken ekletilen teminatlar aracı, poliçede yer alan teminat limitleri kapsamında güvence altına alır. Sürücülerin en çok korktuğu ve gerçekleşmesi durumunda çok ağır bir maddi yüke sebep olan çalınma durumunda, kasko sigortasının önemi daha net anlaşılır. Sigorta şirketleri tarafından kasko sigortalarının ana teminatları arasında yer verilen çalınma ve çalınmaya teşebbüs durumlarında sigortalının zararı poliçede yer alan teminat limitleri kapsamında karşılanır."
         />
