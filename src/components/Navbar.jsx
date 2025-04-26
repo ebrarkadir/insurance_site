@@ -8,6 +8,8 @@ import {
   FaHeartbeat,
   FaPlaneDeparture,
   FaInfoCircle,
+  FaBuilding,
+  FaUserShield,
   FaWhatsapp,
 } from "react-icons/fa";
 
@@ -36,38 +38,42 @@ const Navbar = () => {
 
         <ul className={`navbar-links ${isOpen ? "open" : ""}`}>
           <button className="close-btn" onClick={closeMenu}>
-            ×
+            Kapat X
           </button>
 
+          {/* MASAÜSTÜ MENÜ */}
           <div className="desktop-menu">
             <li className="dropdown">
               <a href="#">Sigorta</a>
               <div className="dropdown-menu">
                 <div className="dropdown-column">
-                  <h4>
-                    <FaCarSide className="icon" /> Araç
-                  </h4>
+                  <h4><FaCarSide className="icon" /> Araç</h4>
                   <a href="/trafik-sigortasi">Zorunlu Trafik Sigortası</a>
                   <a href="/kasko">Kasko Sigortası</a>
                   <a href="/imm">İhtiyari Mali Mesuliyet Sigortası</a>
                 </div>
+
                 <div className="dropdown-column">
-                  <h4>
-                    <FaHome className="icon" /> Doğal Afet
-                  </h4>
+                  <h4><FaHome className="icon" /> Mülk</h4>
                   <a href="/dask">DASK Sigortası</a>
+                  <a href="/isyeri">İşyeri Sigortası</a>
+                  <a href="/konut">Konut Sigortası</a>
                 </div>
+
                 <div className="dropdown-column">
-                  <h4>
-                    <FaHeartbeat className="icon" /> Sağlık
-                  </h4>
+                  <h4><FaHeartbeat className="icon" /> Sağlık</h4>
                   <a href="/tamamlayici-saglik">Tamamlayıcı Sağlık Sigortası</a>
+                  <a href="/saglik">Sağlık Sigortası</a>
                 </div>
+
                 <div className="dropdown-column">
-                  <h4>
-                    <FaPlaneDeparture className="icon" /> Seyahat
-                  </h4>
+                  <h4><FaPlaneDeparture className="icon" /> Seyahat</h4>
                   <a href="/seyahat-saglik">Seyahat Sağlık Sigortası</a>
+                </div>
+
+                <div className="dropdown-column">
+                  <h4><FaUserShield className="icon" /> Diğer</h4>
+                  <a href="/ferdi-kaza">Ferdi Kaza Sigortası</a>
                 </div>
               </div>
             </li>
@@ -76,9 +82,7 @@ const Navbar = () => {
               <a href="#">Hakkımızda</a>
               <div className="dropdown-menu single-column">
                 <div className="dropdown-column">
-                  <h4>
-                    <FaInfoCircle className="icon" /> Hakkımızda
-                  </h4>
+                  <h4><FaInfoCircle className="icon" /> Hakkımızda</h4>
                   <a href="/sirket-bilgileri">Şirket Bilgileri</a>
                   <a href="/ekibimiz">Ekibimiz</a>
                 </div>
@@ -89,9 +93,7 @@ const Navbar = () => {
               <a href="/iletisim">İletişim</a>
               <div className="dropdown-menu single-column">
                 <div className="dropdown-column">
-                  <h4>
-                    <span className="icon">📍</span> İletişim
-                  </h4>
+                  <h4>📍 İletişim</h4>
                   <a href="/iletisim">İletişim Bilgileri</a>
                   <a href="/konum">Konum</a>
                 </div>
@@ -102,9 +104,7 @@ const Navbar = () => {
               <a href="#">Yardım Alın</a>
               <div className="dropdown-menu single-column">
                 <div className="dropdown-column">
-                  <h4>
-                    <span className="icon">❓</span> Yardım Alın
-                  </h4>
+                  <h4>❓ Yardım Alın</h4>
                   <a href="/bize-ulasin">Bize Ulaşın</a>
                   <a href="/sikca-sorulan-sorular">Sıkça Sorulan Sorular</a>
                   <a href="/hasar-aninda">Hasar Anında</a>
@@ -113,7 +113,7 @@ const Navbar = () => {
               </div>
             </li>
 
-            {/* WhatsApp Icon Masaüstü */}
+            {/* WhatsApp Ikonu */}
             <li className="whatsapp-icon">
               <a
                 href="https://wa.me/905433347751"
@@ -125,92 +125,69 @@ const Navbar = () => {
             </li>
           </div>
 
+          {/* MOBİL MENÜ */}
           <div className="mobile-menu">
             <li>
               <details>
                 <summary>Sigorta</summary>
                 <ul>
                   <h5>Araç</h5>
-                  <li>
-                    <a href="/trafik-sigortasi">Zorunlu Trafik Sigortası</a>
-                  </li>
-                  <li>
-                    <a href="/kasko">Kasko Sigortası</a>
-                  </li>
-                  <li>
-                    <a href="/imm">İhtiyari Mali Mesuliyet Sigortası</a>
-                  </li>
+                  <li><a href="/trafik-sigortasi">- Zorunlu Trafik Sigortası</a></li>
+                  <li><a href="/kasko">- Kasko Sigortası</a></li>
+                  <li><a href="/imm">- İMM</a></li>
 
-                  <h5>Doğal Afet</h5>
-                  <li>
-                    <a href="/dask">DASK Sigortası</a>
-                  </li>
+                  <h5>Mülk</h5>
+                  <li><a href="/dask">- DASK Sigortası</a></li>
+                  <li><a href="/isyeri">- İşyeri Sigortası</a></li>
+                  <li><a href="/konut">- Konut Sigortası</a></li>
 
                   <h5>Sağlık</h5>
-                  <li>
-                    <a href="/tamamlayici-saglik">
-                      Tamamlayıcı Sağlık Sigortası
-                    </a>
-                  </li>
+                  <li><a href="/tamamlayici-saglik">- Tamamlayıcı Sağlık Sigortası</a></li>
+                  <li><a href="/saglik">- Sağlık Sigortası</a></li>
 
                   <h5>Seyahat</h5>
-                  <li>
-                    <a href="/seyahat-saglik">Seyahat Sağlık Sigortası</a>
-                  </li>
+                  <li><a href="/seyahat-saglik">- Seyahat Sağlık Sigortası</a></li>
+
+                  <h5>Diğer</h5>
+                  <li><a href="/ferdi-kaza">- Ferdi Kaza Sigortası</a></li>
                 </ul>
               </details>
             </li>
 
             <li>
               <details>
-                <summary>HAKKIMIZDA</summary>
+                <summary>Hakkımızda</summary>
                 <ul>
-                  <li>
-                    <a href="/sirket-bilgileri">Şirket Bilgileri</a>
-                  </li>
-                  <li>
-                    <a href="/ekibimiz">Ekibimiz</a>
-                  </li>
+                  <li><a href="/sirket-bilgileri">- Şirket Bilgileri</a></li>
+                  <li><a href="/ekibimiz">- Ekibimiz</a></li>
                 </ul>
               </details>
             </li>
 
             <li>
               <details>
-                <summary>İLETİŞİM</summary>
+                <summary>İletişim</summary>
                 <ul>
-                  <li>
-                    <a href="/iletisim">İletişim Bilgileri</a>
-                  </li>
-                  <li>
-                    <a href="/konum">Konum</a>
-                  </li>
+                  <li><a href="/iletisim">- İletişim Bilgileri</a></li>
+                  <li><a href="/konum">- Konum</a></li>
                 </ul>
               </details>
             </li>
 
             <li>
               <details>
-                <summary>YARDIM ALIN</summary>
+                <summary>Yardım Alın</summary>
                 <ul>
-                  <li>
-                    <a href="/bize-ulasin">Bize Ulaşın</a>
-                  </li>
-                  <li>
-                    <a href="/sikca-sorulan-sorular">Sıkça Sorulan Sorular</a>
-                  </li>
-                  <li>
-                    <a href="/hasar-aninda">Hasar Anında</a>
-                  </li>
-                  <li>
-                    <a href="/sigorta-teminatlari">Sigorta Teminatları</a>
-                  </li>
+                  <li><a href="/bize-ulasin">- Bize Ulaşın</a></li>
+                  <li><a href="/sikca-sorulan-sorular">- Sıkça Sorulan Sorular</a></li>
+                  <li><a href="/hasar-aninda">- Hasar Anında</a></li>
+                  <li><a href="/sigorta-teminatlari">- Sigorta Teminatları</a></li>
                 </ul>
               </details>
             </li>
 
-            {/* WhatsApp butonunu buraya aldık */}
-            <li className="mobile-whatsapp-icon inline">
+            {/* WhatsApp Mobil */}
+            <li className="mobile-whatsapp-icon">
               <a
                 href="https://wa.me/905433347751"
                 target="_blank"

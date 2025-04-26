@@ -87,7 +87,6 @@
   border-bottom-right-radius: 6px;
 }
 
-
 .trafik-form textarea {
   padding: 12px;
   border: 1px solid #ccc;
@@ -99,7 +98,6 @@
   resize: vertical; /* istersen 'none' yaparak boyutlandırmayı da engelleyebilirsin */
   font-family: inherit;
 }
-
 
 .trafik-form {
   display: flex;
@@ -140,8 +138,6 @@
   font-size: 2rem;
   padding-top: 30px;
 }
-
-
 
 .checkbox-altinda {
   display: flex;
@@ -206,7 +202,6 @@
   display: block;
 }
 
-
 .form-info {
   font-size: 0.9rem;
   color: #555;
@@ -223,6 +218,27 @@
   margin-top: 16px;
   text-align: center;
 }
+
+/* Metrekare input düzenlemesi */
+.trafik-form input[type="number"]::-webkit-outer-spin-button,
+.trafik-form input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.trafik-form input[type="number"] {
+  -moz-appearance: textfield;
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #ccd4e0;
+  border-radius: 6px;
+  padding: 12px;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+
 
 .popup-overlay {
   position: fixed;
@@ -282,6 +298,84 @@
   background-color: #002060;
 }
 
+.trafik-form input[type="number"]::-webkit-outer-spin-button,
+.trafik-form input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.trafik-form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.trafik-form input[type="number"] {
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #ccd4e0;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 16px;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Checkbox alanı için */
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  background-color: #ffffff; /* ✅ Beyaz kutu */
+  border: 2px solid #003087;
+  border-radius: 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked {
+  background-color: #003087; /* Seçince mavi olacak */
+  border-color: #003087;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Checkbox yazısını düzgün hale getirelim */
+.checkbox-wrapper label {
+  font-size: 1rem;
+  color: #003087; /* ✅ Link gibi değil normal yazı */
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none; /* ✅ Link efekti yok */
+}
+
+
+.checkbox-wrapper label {
+  font-size: 1rem;
+  color: #003087;
+  cursor: pointer;
+  user-select: none;
+}
+
 @keyframes fadeInScale {
   from {
     opacity: 0;
@@ -302,7 +396,6 @@
   width: 100%;
   box-sizing: border-box;
 }
-
 
 /* Responsive */
 @media (max-width: 480px) {
