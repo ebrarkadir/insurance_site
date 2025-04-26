@@ -24,6 +24,11 @@ import ScrollToTop from "./components/ScrollToTop"; // 👈 buraya ekle
 import { Helmet } from "react-helmet";
 import FerdiKaza from "./pages/FerdiKaza";
 import IsyeriSigortasi from "./pages/IsyeriSigortasi";
+import KonutSigortasi from "./pages/KonutSigortasi";
+import SaglikSigortasi from "./pages/SaglikSigortasi";
+
+
+
 
 function App() {
   return (
@@ -65,6 +70,9 @@ function App() {
           <Route path="/seyahat-saglik" element={<SeyahatSaglik />} />
           <Route path="/ferdi-kaza" element={<FerdiKaza />} />
           <Route path="/isyeri" element={<IsyeriSigortasi />} />
+          <Route path="/konut" element={<KonutSigortasi />} />
+          <Route path="/saglik" element={<SaglikSigortasi />} />
+
         </Routes>
       </div>
       <Footer />

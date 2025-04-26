@@ -238,8 +238,6 @@
   box-sizing: border-box;
 }
 
-
-
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -368,12 +366,36 @@
   text-decoration: none; /* ✅ Link efekti yok */
 }
 
-
 .checkbox-wrapper label {
   font-size: 1rem;
   color: #003087;
   cursor: pointer;
   user-select: none;
+}
+.trafik-form select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  appearance: none;
+}
+.bina-yili-select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23003087' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 18px 18px;
+  cursor: pointer;
 }
 
 @keyframes fadeInScale {

@@ -71,7 +71,7 @@ const TamamlayiciSaglik = () => {
             onChange={(e) => setSoyad(e.target.value)}
             required
           />
-
+          <label className="form-label">Doğum Tarihi</label>
           <input
             type="date"
             name="dogum_tarihi"
@@ -79,6 +79,7 @@ const TamamlayiciSaglik = () => {
             onChange={(e) => setDogumTarihi(e.target.value)}
             required
           />
+          
 
           <p className="form-info">
             Bu formdan ilettiğiniz bilgiler sadece tamamlayıcı sağlık sigortası
