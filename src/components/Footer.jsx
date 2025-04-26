@@ -11,66 +11,42 @@ const Footer = () => {
         <div className="footer-col desktop-only">
           <h3>Çetin Sigorta</h3>
           <ul>
-            <li>
-              <a href="/sirket-bilgileri">Şirket Bilgileri</a>
-            </li>
-            <li>
-              <a href="/ekibimiz">Ekibimiz</a>
-            </li>
+            <li><a href="/sirket-bilgileri">Şirket Bilgileri</a></li>
+            <li><a href="/ekibimiz">Ekibimiz</a></li>
           </ul>
         </div>
 
         <div className="footer-col desktop-only">
           <h3>Sigorta</h3>
           <ul>
-            <li>
-              <a href="/trafik-sigortasi">Zorunlu Trafik Sigortası</a>
-            </li>
-            <li>
-              <a href="/kasko">Kasko Sigortası</a>
-            </li>
-            <li>
-              <a href="/imm">İMM</a>
-            </li>
-            <li>
-              <a href="/dask">DASK Sigortası</a>
-            </li>
-            <li>
-              <a href="/tamamlayici-saglik">Tamamlayıcı Sağlık Sigortası</a>
-            </li>
-            <li>
-              <a href="/seyahat-saglik">Seyahat Sağlık Sigortası</a>
-            </li>
+            <li><a href="/trafik-sigortasi">Zorunlu Trafik Sigortası</a></li>
+            <li><a href="/kasko">Kasko Sigortası</a></li>
+            <li><a href="/imm">İMM</a></li>
+            <li><a href="/dask">DASK Sigortası</a></li>
+            <li><a href="/tamamlayici-saglik">Tamamlayıcı Sağlık Sigortası</a></li>
+            <li><a href="/seyahat-saglik">Seyahat Sağlık Sigortası</a></li>
+            <li><a href="/ferdi-kaza">Ferdi Kaza Sigortası</a></li>
+            <li><a href="/isyeri">İşyeri Sigortası</a></li>
+            <li><a href="/konut">Konut Sigortası</a></li>
+            <li><a href="/saglik">Sağlık Sigortası</a></li>
           </ul>
         </div>
 
         <div className="footer-col desktop-only">
           <h3>İletişim</h3>
           <ul>
-            <li>
-              <a href="/iletisim">İletişim Bilgileri</a>
-            </li>
-            <li>
-              <a href="/konum">Konum</a>
-            </li>
+            <li><a href="/iletisim">İletişim Bilgileri</a></li>
+            <li><a href="/konum">Konum</a></li>
           </ul>
         </div>
 
         <div className="footer-col desktop-only">
           <h3>Yardım Alın</h3>
           <ul>
-            <li>
-              <a href="/bize-ulasin">Bize Ulaşın</a>
-            </li>
-            <li>
-              <a href="/sikca-sorulan-sorular">Sıkça Sorulan Sorular</a>
-            </li>
-            <li>
-              <a href="/hasar-aninda">Hasar Anında</a>
-            </li>
-            <li>
-              <a href="/sigorta-teminatlari">Sigorta Teminatları</a>
-            </li>
+            <li><a href="/bize-ulasin">Bize Ulaşın</a></li>
+            <li><a href="/sikca-sorulan-sorular">Sıkça Sorulan Sorular</a></li>
+            <li><a href="/hasar-aninda">Hasar Anında</a></li>
+            <li><a href="/sigorta-teminatlari">Sigorta Teminatları</a></li>
           </ul>
         </div>
 
@@ -79,66 +55,42 @@ const Footer = () => {
           <details>
             <summary>Çetin Sigorta</summary>
             <ul>
-              <li>
-                <a href="/sirket-bilgileri">Şirket Bilgileri</a>
-              </li>
-              <li>
-                <a href="/ekibimiz">Ekibimiz</a>
-              </li>
+              <li><a href="/sirket-bilgileri">Şirket Bilgileri</a></li>
+              <li><a href="/ekibimiz">Ekibimiz</a></li>
             </ul>
           </details>
 
           <details>
             <summary>Sigorta</summary>
             <ul>
-              <li>
-                <a href="/trafik-sigortasi">Zorunlu Trafik Sigortası</a>
-              </li>
-              <li>
-                <a href="/kasko">Kasko Sigortası</a>
-              </li>
-              <li>
-                <a href="/dask">DASK Sigortası</a>
-              </li>
-              <li>
-                <a href="/imm">İMM</a>
-              </li>
-              <li>
-                <a href="/tamamlayici-saglik">Tamamlayıcı Sağlık Sigortası</a>
-              </li>
-              <li>
-                <a href="/seyahat-saglik">Seyahat Sağlık Sigortası</a>
-              </li>
+              <li><a href="/trafik-sigortasi">Zorunlu Trafik Sigortası</a></li>
+              <li><a href="/kasko">Kasko Sigortası</a></li>
+              <li><a href="/imm">İMM</a></li>
+              <li><a href="/dask">DASK Sigortası</a></li>
+              <li><a href="/tamamlayici-saglik">Tamamlayıcı Sağlık Sigortası</a></li>
+              <li><a href="/seyahat-saglik">Seyahat Sağlık Sigortası</a></li>
+              <li><a href="/ferdi-kaza">Ferdi Kaza Sigortası</a></li>
+              <li><a href="/isyeri">İşyeri Sigortası</a></li>
+              <li><a href="/konut">Konut Sigortası</a></li>
+              <li><a href="/saglik">Sağlık Sigortası</a></li>
             </ul>
           </details>
 
           <details>
             <summary>İletişim</summary>
             <ul>
-              <li>
-                <a href="/iletisim">İletişim Bilgileri</a>
-              </li>
-              <li>
-                <a href="/konum">Konum</a>
-              </li>
+              <li><a href="/iletisim">İletişim Bilgileri</a></li>
+              <li><a href="/konum">Konum</a></li>
             </ul>
           </details>
 
           <details>
             <summary>Yardım Alın</summary>
             <ul>
-              <li>
-                <a href="/bize-ulasin">Bize Ulaşın</a>
-              </li>
-              <li>
-                <a href="/sikca-sorulan-sorular">Sıkça Sorulan Sorular</a>
-              </li>
-              <li>
-                <a href="/hasar-aninda">Hasar Anında</a>
-              </li>
-              <li>
-                <a href="/sigorta-teminatlari">Sigorta Teminatları</a>
-              </li>
+              <li><a href="/bize-ulasin">Bize Ulaşın</a></li>
+              <li><a href="/sikca-sorulan-sorular">Sıkça Sorulan Sorular</a></li>
+              <li><a href="/hasar-aninda">Hasar Anında</a></li>
+              <li><a href="/sigorta-teminatlari">Sigorta Teminatları</a></li>
             </ul>
           </details>
         </div>
@@ -151,8 +103,8 @@ const Footer = () => {
             <img src={logo} alt="logo" className="footer-logo-large" />
             <span>Çetin Sigorta</span>
           </div>
-          <p>Adres: Mecidiye Mahallesi </p>
-          <p>Milli Birlik Caddesi No:102/B </p>
+          <p>Adres: Mecidiye Mahallesi</p>
+          <p>Milli Birlik Caddesi No:102/B</p>
           <p>Afyonkarahisar / Merkez</p>
           <p>
             E-posta:{" "}
@@ -162,30 +114,18 @@ const Footer = () => {
         </div>
 
         <div className="footer-middle-right">
-          <h2>
-            <FaPhoneAlt style={{ color: "grey" }} /> 05433347751, 05412400402
-          </h2>
-          <h2>
-            <FaPhoneAlt style={{ color: "grey" }} /> 02722147696
-          </h2>
-          <p>
-            Sorularınız için numaramızdan bize ulaşarak destek alabilirsiniz.
-          </p>
-          <p>
-            Çetin Sigorta Müşteri Hizmetleri hafta içi 09:30 - 19:30 arası
-            hizmetinizdedir.
-          </p>
-          <p>
-            Çalışma saatleri dışında WhatsApp aracılığı ile ulaşabilirsiniz.
-          </p>
+          <h2><FaPhoneAlt style={{ color: "grey" }} /> 05433347751, 05412400402</h2>
+          <h2><FaPhoneAlt style={{ color: "grey" }} /> 02722147696</h2>
+          <p>Sorularınız için numaramızdan bize ulaşarak destek alabilirsiniz.</p>
+          <p>Çetin Sigorta Müşteri Hizmetleri hafta içi 09:30 - 19:30 arası hizmetinizdedir.</p>
+          <p>Çalışma saatleri dışında WhatsApp aracılığı ile ulaşabilirsiniz.</p>
         </div>
       </div>
 
       <div className="footer-bottom">
         <p>© 2025 Çetin Sigorta. Tüm hakları saklıdır.</p>
         <p className="footer-designer">
-          Bu site, Ebrar Kadir Çetin tarafından Çetin Sigorta için
-          geliştirilmiştir.
+          Bu site, Ebrar Kadir Çetin tarafından Çetin Sigorta için geliştirilmiştir.
         </p>
       </div>
     </footer>
